@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="lincolnfrias">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>referencias | lincolnfrias</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" title="lincolnfrias blog atom feed" href="/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007EE5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  font-size: 11px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  margin-bottom: 20px;
+  display: block;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #205F29;
+  background: #FFF;
+  border: 1px solid #205F29;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #000;
+}
+.index article header h2 a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 1000px;
+}
+/*.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}*/
+.post article .meta {
+  margin: 50px 0 100px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-inverse bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">lincolnfrias</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container post">
+
+    <article>
+        <header>
+            <!-- <h1>referencias</h1> -->
+        </header>
+
+        <div class="article_content">
+            <h2>Referências</h2>
+<p><br></p>
+<p>As referências bibliográficas são um dos fatores que tornam a ciência respeitável: elas permitem que os leitores confiram as fontes onde o autor conseguiu suas informações.</p>
+<p>Cada vez que você usa uma fonte em seu trabalho é uma <em>citação</em>. A cada citação você deve fazer uma <em>chamada</em>, que é uma indicação de qual fonte foi utilizada, incluindo sobrenome do autor, data e página. Por exemplo, (MOREIRA, 2008, p. 56). E cada chamada chama uma <em>referência</em> que está ao final do texto, a descrição detalhada da fonte que você usou (autor, título, ano de publicação, <em>link</em> etc.). No final dos artigos há seção chamada <em>referências</em> (ou <em>referências bibliográficas</em> ), uma listagem com todas as fontes utilizadas durante o texto.</p>
+<p>As citações podem ser diretas ou indiretas. No primeiro caso, você usa as palavras do texto que você leu, colocando-o entre aspas. No segundo caso, você apresenta as ideias do texto, mas com suas próprias palavras. Nas citações diretas, é obrigatório indicar a página na chamada. Nas citações indiretas, isso é opcional, mas recomendável.</p>
+<p>Atenção:</p>
+<ul>
+<li>todas as fontes que foram importantes para a elaboração do seu texto devem ser citadas.</li>
+<li>todas as citações (diretas ou indiretas) devem conter chamadas.</li>
+<li>todas as fontes citadas devem estar nas referências. E todas as referências devem ter sido citadas.</li>
+<li>não coloque as iniciais do primeiro nome nas chamadas, coloque apenas sobrenome, data e página.</li>
+</ul>
+<p>A principal dificuldade em elaborar as referências está na quantidade de regras que devem ser seguidas (sobrenome em caixa alta, autores divididos por ponto e vírgula etc.). Essas regras existem para permitir que programas leiam essas informações de maneira automática e construam mecanismos de busca como o <em>Scielo</em> e o <em>Google Acadêmico</em>.</p>
+<p>Outra dificuldade vem do fato de que existem vários estilos de referência (ABNT, APA, Chicago etc.). Isso significa que muitas vezes você estará lendo um artigo que segue regras de formatação de referências diferentes daquelas que você deve seguir no seu trabalho. Todos os trabalhos universitários brasileiros seguem as regras da ABNT (expostas na norma NBR 6023), mas nem todas as revistas científicas brasileiras seguem estas regras, pois muitas vezes elas estão interessadas em seguir o estilo das publicações internacionais da sua área e as regras da ABNT vale apenas para o Brasil.</p>
+<p>No entanto, embora sejam muitos detalhes, depois que você entende a lógica por detrás deles, é algo fácil de decorar. Além disso você pode usar as referências criadas pelo <em>Scielo</em> e <em>Google Acadêmico</em> e simplesmente fazer os ajustes necessários.</p>
+<p>A estrutura básica das referências é a seguinte:</p>
+<blockquote>
+<p>AUTOR. Título em negrito. Outras informações. Ano.</p>
+</blockquote>
+<p>Aspectos que se repetem:</p>
+<ul>
+<li>a primeira coisa é sempre o sobrenome do autor em maiúsculas (caixa alta).</li>
+<li>o título estará em negrito, exceto no caso de artigos científicos. Nesse caso, é o título da revista que fica em negrito.</li>
+<li>a última coisa é o ano.</li>
+</ul>
+<p>Sobre a autoria:</p>
+<ul>
+<li>o autor não precisa ser uma pessoa, pode ser uma instituição (Brasil, Prefeitura de Varginha, Organização Mundial da Saúde etc.).</li>
+<li>um artigo pode ter mais de um autor. Neste caso, os autores ficam separados por ponto e vírgula. Veja os exemplos abaixo.</li>
+<li>quando há mais do que três autores, use a expressão latina <em>et al.</em> (que significa "e outros").</li>
+</ul>
+<p>Algumas vezes, o nome do autor pode ser o mesmo que o título. Por exemplo, o caso do site da Receita Federal:</p>
+<p>RECEITA FEDERAL DO BRASIL. <strong>Receita Federal do Brasil</strong>. Disponível em: www.rfb.gov.br Acesso em: 31 de out. 2017.</p>
+<p><br></p>
+<h2>Exemplos</h2>
+<p><br></p>
+<p>CAVALCANTI, M. Do barraco à casa: tempo, espaço e valor(es) em uma favela consolidada. <strong>Revista Brasileira Ciências Sociais</strong>, v. 24, n. 69, p. 69-80, 2009.</p>
+<p>RIBEIRO, M. Preços de escravos em Campinas no século XIX. <strong>Revista História Econômica &amp; História de Empresas</strong>, v. 20, n. 1, p. 85-123, 2017.</p>
+<p>DIAS, A.; TEIXEIRA, M. Gravidez na adolescência: um olhar sobre um fenômeno complexo. <strong>Paidéia</strong>, v. 20, n. 45, p. 123-131, 2010.</p>
+<p>SAPORI, L.; SANTOS, R.;  MAAS, L. Fatores sociais determinantes da reincidência criminal no Brasil: o caso de Minas Gerais. <strong>Revista Brasileira de Ciências Sociais</strong>, v. 32, n. 94, 2017.</p>
+<p>TERCI, E.; GOULART, J.;  OTERO, E. Dinâmica econômica e empresariamento urbano em cidades médias sob o impacto da reestruturação produtiva. <strong>Nova Economia</strong>, v. 27, n. 1, p. 143-172, 2017.</p>
+<p>SIMOES, P.; ALVES, J.;  SILVA, P. Transformações e tendências do mercado de trabalho no Brasil entre 2001 e 2015: paradoxo do baixo desemprego? <strong>Revista Brasileira de Estudos da População</strong>, v. 33, n.3, p. 541-566, 2016.  </p>
+<p>BARROS, M. <em>et al</em>. Tendências das desigualdades sociais e demográficas na prevalência de doenças crônicas no Brasil, PNAD: 2003- 2008. <strong>Ciência e Saúde Coletiva</strong>,  Rio de Janeiro ,  v. 16, n. 9, p. 3755-3768, 2011.  </p>
+<p>MACHADO, A. <em>et al</em>. Consumo de bens e serviços culturais e alocação de tempo no Brasil. <strong>Nova Economia</strong>, v.27, n.1, p. 35-63 2017.</p>
+<h3>Livros</h3>
+<p>SILVER, N. <strong>O sinal e o  ruído</strong>: por que tantas previsões falham e outras não? Rio de Janeiro: Intrínseca, 2013.</p>
+<h3>Livros e outros textos na internet</h3>
+<p>SINDICATO NACIONAL DOS AUDITORES FISCAIS DA RECEITA FEDERAL DO BRASIL (SINDIFISCO); DEPARTAMENTO INTERSINDICAL DE ESTATÍSTICA E ESTUDOS SOCIOECONÔMICOS (DIEESE). <strong>10 ideias para uma tributação mais justa</strong>. São Paulo, mar. 2013. Disponível em: <a href="http://www.sindifisconacional.org.br/index.php? option=com_content&amp; view= article&amp;id=21448:cartilha-10-ideias-para-uma-tributacao-mais-justa&amp;catid=279:publicacoes-tecnicas&amp;Itemid=384">http://www.sindifisconacional.org.br/index.php? option=com_content&amp; view= article&amp;id=21448:cartilha-10-ideias-para-uma-tributacao-mais-justa&amp;catid=279:publicacoes-tecnicas&amp;Itemid=384</a>. Acesso em: 16 out. 2014.</p>
+<p>INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). <strong>Cidades</strong>. 2015. Disponível em: <a href="http://cidades.ibge.gov.br/xtras/perfil.php?codmun =317070">http://cidades.ibge.gov.br/xtras/perfil.php?codmun =317070</a>. Acesso em: 28 out. 2015.</p>
+<h3>Site</h3>
+<p>RECEITA FEDERAL DO BRASIL. <strong>Receita Federal do Brasil</strong>. Disponível em: www.rfb.gov.br Acesso em: 31 de out. 2017.</p>
+<p>UNIVERSIDADE FEDERAL DE SANTA CATARINA. <strong>Catálogos de Universidades</strong>. Disponível em: http://www.bu.ufsc.br. Acesso em: 19 maio 2016.</p>
+<h3>Artigo de jornais e revista de banca</h3>
+<p>OLIVEIRA, W. P. de. Judô: Educação física e moral. <strong>O Estado de Minas</strong>, 17 mar. 1981, p. 7.</p>
+<h3>Textos jurídicos</h3>
+<p>BRASIL. <strong>Constituição da República Federativa do Brasil</strong>, 1988.
+Disponível em: https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm Acesso em: 22 jun. 2017.</p>
+<p>BRASIL. <strong>Lei n. 9.394</strong>, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional. Disponível em: http://www.planalto.gov.br/ccivil_03/LEIS/L9394.htm Acesso em: 30 jul 2016.</p>
+<h3>Dissertações e teses</h3>
+<p>RODRIGUES, M. <strong>Qualidade de vida no trabalho</strong>. Dissertação (Mestrado em Administração), Universidade Federal de Minas Gerais, Belo Horizonte, 1989.</p>
+<h3>Trabalhos apresentados em congressos</h3>
+<p>SOARES, V. Interpretação da função social da propriedade na CF/88, à luz dos fundamentos da socialidade, fraternidade e dignidade da pessoa humana. In: XVII CONGRESSO DO CONPEDI, 2008, Brasília.  <strong>Anais ...</strong> Florianópolis: Fundação Boiteux, 2008. p. 6929-6945. Disponível em: <a href="https://s3.amazonaws.com/conpedi2/anteriores/XVII+ Congresso+Nacional++Bras%C3%ADlia+%2820%2C+21+e+22+de+novembro+de+2008%29.pdf">https://s3.amazonaws.com/conpedi2/anteriores/XVII+ Congresso+Nacional++Bras%C3%ADlia+%2820%2C+21+e+22+de+novembro+de+2008%29.pdf</a>. Acesso em: 3 maio 2015.</p>
+<h3>Capítulo de livro</h3>
+<p>ALVES, J.; CAVENAGLI, S. O Programa Bolsa Família e as taxas de fecundidade no Brasil. In: CAMPELLO, T.; NERI, M. <strong>Programa Bolsa Família</strong>: uma década de inclusão e cidadania. Brasília: IPEA, 2013, p. 233-246.</p>
+        </div>
+
+    </article>
+</div>
+        </div>
+    </body>
+</html>

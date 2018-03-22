@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="lincolnfrias">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>artigo | lincolnfrias</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" title="lincolnfrias blog atom feed" href="/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007EE5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  font-size: 11px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  margin-bottom: 20px;
+  display: block;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #205F29;
+  background: #FFF;
+  border: 1px solid #205F29;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #000;
+}
+.index article header h2 a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 1000px;
+}
+/*.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}*/
+.post article .meta {
+  margin: 50px 0 100px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-inverse bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">lincolnfrias</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container post">
+
+    <article>
+        <header>
+            <!-- <h1>artigo</h1> -->
+        </header>
+
+        <div class="article_content">
+            <h3>Estrutura</h3>
+<ul>
+<li>tamanho: no mínimo, 1500 palavras.</li>
+<li>capa de acordo com o modelo.</li>
+<li>resumo contendo objetivo, metodologia e resultados.</li>
+<li>a primeira seção é a introdução, a última são as considerações finais. Crie pelo menos duas outras seções entre elas, escolhendo os títulos de acordo com o seu tema.</li>
+<li>referências.</li>
+</ul>
+<h3>Formatação</h3>
+<ul>
+<li>fonte: times new roman  </li>
+<li>tamanho da fonte:<ul>
+<li>corpo do texto: 12</li>
+<li>resumo e citações com recuo: 10</li>
+<li>título na capa: livre</li>
+</ul>
+</li>
+<li>espaçamento:<ul>
+<li>corpo do texto: 1,5</li>
+<li>resumo e citações com recuo: 1 (ou simples)</li>
+</ul>
+</li>
+<li>margens:<ul>
+<li>superior e esquerda: 3 cm</li>
+<li>inferior e direita: 2 cm</li>
+</ul>
+</li>
+<li>alinhamento:<ul>
+<li>corpo do texto: justificado</li>
+<li>capa: centralizado</li>
+</ul>
+</li>
+</ul>
+<p>Opcional: os alunos interessados em fazer um trabalho mais rigoroso, mais avançado, podem tentar seguir toda a estrutura e todas as regras indicadas pelo <em>Manual de Normalização da Unifal</em> (folha de rosto, lista de tabelas, epígrafe, dedicatória etc.).</p>
+<h3>Conteúdo</h3>
+<ul>
+<li>Usar linguagem impessoal. Não use primeira pessoa e evite linguagem emotiva.</li>
+<li>Inclua pelo menos três artigos científicos.</li>
+<li>Você pode incluir qualquer fonte que julgar importante. Apenas para te orientar, pense na seguinte ordem de confiabilidade:<ol>
+<li>artigos científicos.</li>
+<li>livros, teses, dissertações, trabalhos apresentados em congressos, jornais e sites sérios.</li>
+<li>revistas vendidas em bancas de jornal.</li>
+<li>blogs, posts etc.</li>
+</ol>
+</li>
+<li>todas as fontes citadas durante o texto deve estar nas referências e as referências devem conter apenas fontes citadas durante o texto.  </li>
+</ul>
+<h3>Plágio</h3>
+<ul>
+<li>Caso seu trabalho contenha frases de outros autores sem que haja referência, ele receberá a nota zero.  </li>
+<li>Quanto mais citações fizer, melhor será, pois é sinal de rigor científico. Em ciência, usar ideias de outras pessoas é motivo de orgulho, não de vergonha. Vergonhoso é apresentar como suas as ideias de outros autores.  </li>
+<li>Você tem a obrigação de ser capaz de responder questões sobre o conteúdo de seu trabalho, incluindo o conteúdo das suas referências.  </li>
+</ul>
+<h3>Sugestões sobre o conteúdo para o modelo IMRDC</h3>
+<p><em>Resumo</em><br>
+    Deve ser uma miniatura do artigo, não uma introdução. Seja direto, inclua somente os seguintes tópicos, com apenas uma ou duas frases para cada um deles:<br>
+    1. objetivo: a qual pergunta o artigo tenta responder. Se preferir, antes de indicar o objetivo, escreva uma frase introduzindo o assunto.<br>
+    2. metodologia ou roteiro: qual a estratégia utilizada para responder a essa pergunta. Por exemplo, origem e tipo de evidência; fonte dos dados; tipos de comparação; qual é o referencial teórico; como foi encontrada a literatura secundária etc. Não é preciso incluir todos esses aspectos, apenas o que for relevante para o tipo de pesquisa que foi feita.<br>
+        Se for uma pesquisa teórica, histórica ou uma revisão não-sistemática, ao invés de indicar a metodologia, você pode incluir um roteiro com o conteúdo das seções (por exemplo, "o artigo está dividido em quatro seções, além da introdução e das considerações finais. A primeira delas apresenta (...). A seção seguinte analisa (...)").<br>
+    3. resultados: as principais informações que a pesquisa produziu.  </p>
+<p><em>Introdução</em><br>
+    - primeiro parágrafo: apresente seu objetivo de maneira interessante.<br>
+    - segundo parágrafo: delimite seu tema e forneça um roteiro do seu texto.<br>
+    - pode haver mais do que dois parágrafos. Alguns artigos apresentam aqui o referencial teórico (uma pequena revisão de literatura, as principais referências nas quais seu trabalho se baseia), outros preferem criar uma seção separada.<br>
+    - o último parágrado deve ser um roteiro com o conteúdo das seções. Por exemplo, "o artigo está dividido em quatro seções, além da introdução e das considerações finais. A primeira delas apresenta (...). A seção seguinte analisa (...)".  </p>
+<p><em>Desenvolvimento</em></p>
+<ul>
+<li>escolha o título das suas de maneira que organize as ideias, dando clareza à sua pesquisa.</li>
+<li>se for citar muitos dados, a maior parte deles deve estar em tabelas e gráficos, não no texto. Sempre que possível, apresente os dados em forma de proporções (isto é, porcentagens ou números relativos), variações (mudanças percentuais) e/ou rankings.</li>
+</ul>
+<p><em>Considerações finais</em><br>
+    - apenas resuma os resultados do seu texto de maneira clara, não apresente ideias novas. Se quiser, indique limitações de sua pesquisa e sugira pesquisas futuras.  </p>
+<h3>Confira</h3>
+<ul>
+<li>você usou o corretor ortográfico?</li>
+<li>a pergunta da sua pesquisa está clara?</li>
+<li>seu texto responde a essa pergunta?</li>
+<li>seu resumo é uma miniatura de seu texto? (objetivo, metodologia e resultados)</li>
+<li>as frases estão muito grandes? (maiores do que 4 linhas)</li>
+<li>os parágrafos estão muito grandes? (maiores do que 12 linhas)</li>
+<li>há vírgulas separando sujeito e predicado?</li>
+<li>há erros no uso de mas/mais?</li>
+<li>todo o texto está em fonte Times New Roman?</li>
+<li>o tamanho da fonte é 12? (no resumo e na citação direta com recuo deve ser 10, no título deve ser 16).</li>
+<li>o espaçamento no corpo do texto é 1,5? (no resumo e na citação direta com recuo deve ser 1).</li>
+<li>as margens superior e esquerda têm 3 cm enquanto que a inferior e direita têm 2 cm?</li>
+<li>o corpo do texto está com alinhamento justificado?</li>
+<li>as referências estão em ordem alfabética?</li>
+<li>nas chamadas há apenas sobrenome, ano e página? (sem iniciais dos autores)</li>
+</ul>
+<!-- - escolha uma das seguintes estruturas de seções:  
+  - IMRDC: introdução, metodologia, resultados, discussão e considerações finais.
+    - ensaio: introdução, desenvolvimento e considerações finais. -->
+
+<!-- *Metodologia*  
+    Indique:  
+    - a abrangência dos dados. Se os dados são transversais, indique a abrangência geográfica (quantos municípios, países, etc.). Se os dados forem uma série temporal, indique qual o período estudado (p. ex., de 1991 a 2010). Se os dados forem longitudinais, é preciso incluir os dois tipos de abrangência.  
+    - as bases de dados (censos demográficos, Rais, PNAD etc.).  
+    - o mecanismo de consulta (Atlas Brasil, IpeaData, Sidra etc.).
+
+ *Resultados*  
+    - apresente seus dados sob a forma de tabelas e gráficos.  
+    - não apresente dados irrelevantes.  
+    - sempre que possível, transforme os dados em proporções.    
+
+*Discussão*  
+    Esse é o momento onde é mais importante discutir com a literatura.  
+    - analise seus dados. Para isso, cite artigos que apresentem teorias sobre o seu tema.  
+    - faça comparações. Compare seus resultados com outros estudos semelhantes (sobre outras cidades, outros países etc.).   -->
+        </div>
+
+    </article>
+</div>
+        </div>
+    </body>
+</html>

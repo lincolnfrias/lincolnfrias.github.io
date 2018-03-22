@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="lincolnfrias">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>resumo | lincolnfrias</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" title="lincolnfrias blog atom feed" href="/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007EE5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  font-size: 11px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  margin-bottom: 20px;
+  display: block;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #205F29;
+  background: #FFF;
+  border: 1px solid #205F29;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #000;
+}
+.index article header h2 a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 1000px;
+}
+/*.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}*/
+.post article .meta {
+  margin: 50px 0 100px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-inverse bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">lincolnfrias</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container post">
+
+    <article>
+        <header>
+            <!-- <h1>resumo</h1> -->
+        </header>
+
+        <div class="article_content">
+            <h2>Como escrever o resumo do seu artigo</h2>
+<p>O resumo é uma parte decisiva do seu artigo. Normalmente, quando estamos pesquisando um assunto, lemos dezenas de resumos para decidir quais os poucos artigos que realmente leremos. Por isso, juntamente com o título, o resumo é a parte do seu artigo que tem a maior chance de ser lida.</p>
+<p>O resumo não é uma introdução a seu artigo, ele é um <em>substituto</em> do seu artigo. Ele deve servir como uma miniatura do artigo, resumindo os aspectos mais importantes. Por isso, todo resumo deve incluir três coisas:</p>
+<ul>
+<li>objetivo</li>
+<li>metodologia</li>
+<li>resultados</li>
+</ul>
+<p>No caso dos artigos de revisão não sistemática, como o que você deve escrever para a disciplina, a metodologia é mais simples. Basta escrever algo como: "a metodologia adotada é a revisão de literatura não sistemática a partir das plataformas <em>Google Acadêmico</em> e <em>Scielo</em>". Você também pode indicar em quantas seções o artigo está dividido e qual o conteúdo delas.</p>
+<p>No caso dos artigos empíricos, a metodologia é mais detalhada. É preciso indicar:  </p>
+<ul>
+<li>qual a <strong>fonte dos dados</strong> (censos do IBGE, Pnad do IBGE, Bovespa, Banco Central, Datasus etc.);  </li>
+<li>indicar o <strong>tamanho da amostra</strong> (número de pessoas que participaram da pesquisa) e como ela foi selecionada (amostragem aleatória simples, por conglomerado, amostra de conveniência etc.);  </li>
+<li>se os dados foram coletados pelo próprio pesquisador (dados primários), indicar qual foi a <strong>técnica de coleta dos dados</strong> (questionário fechado, grupo focal etc.);  </li>
+<li>quais os <strong>recortes temporal e geográfico</strong> (quais os anos e qual a região analisada);  </li>
+<li>qual a <strong>técnica de análise dos dados</strong> (análise de regressão, análise de agrupamento, análise do discurso etc.).  </li>
+</ul>
+<p>Abaixo estão alguns exemplos de resumo.</p>
+<p><br></p>
+<h3>Pesquisas de revisão</h3>
+<p><br></p>
+<p>DIAS, A.; TEIXEIRA, M. Gravidez na adolescência: um olhar sobre um fenômeno complexo. <strong>Paidéia</strong>, v. 20, n. 45, p. 123-131, 2010 .</p>
+<blockquote>
+<p>O presente trabalho apresenta uma revisão seletiva e não sistemática da literatura a respeito do fenômeno da gestação na adolescência. Três eixos temáticos orientam a organização do trabalho: (a) Riscos e problemas associados à gestação na adolescência; (b) Fatores precursores relacionados à gravidez na adolescência; e (c) Fatores sócio-culturais associados ao desejo de ser mãe na adolescência. Entre as conclusões, destaca-se que a gravidez na adolescência é uma experiência que pode ter consequências tanto negativas quanto positivas para os adolescentes. Além disso, o fenômeno evidencia a necessidade de intervenções voltadas à saúde sexual e reprodutiva dos adolescentes.</p>
+</blockquote>
+<p>BATISTA, Mariana  e  DOMINGOS, Amanda. Mais que boas intenções: técnicas quantitativas e qualitativas na avaliação de impacto de políticas públicas. <strong>Revista Brasileira de Ciências Sociais</strong>, v. 32, n. 94, 2017.</p>
+<blockquote>
+<p>Como técnicas quantitativas e qualitativas podem ser mobilizadas para avaliar o impacto de políticas públicas? Este trabalho tem por objetivo apresentar os fundamentos da avaliação de impacto e discutir as principais técnicas utilizadas para quantificar ou para qualificar o impacto das políticas. Para tanto, apresentamos o experimento controlado e técnicas quase-experimentais como ferramentas de identificação do efeito causal das políticas e técnicas de observação, entrevista em profundidade e grupos focais como formas de compreender o seu impacto sobre a qualidade de vida dos beneficiários. As diferentes técnicas são apresentadas com exemplos práticos de políticas públicas. Os resultados indicam que as abordagens quantitativa e qualitativa respondem à questões diferentes na avaliação. Contudo, ambas são fundamentais para a formulação de políticas baseada em evidências.</p>
+</blockquote>
+<p>FERREIRA, A.; LOIOLA, E.; GONDIM, S. Preditores individuais e contextuais da intenção empreendedora entre universitários: revisão de literatura. <strong>Cadernos EBAPE.BR</strong>, v. 15, n. 2, p. 292-308, 2017.</p>
+<blockquote>
+<p>Esta revisão de literatura teve por objetivo identificar em estudos empíricos os principais preditores individuais e contextuais da intenção empreendedora (IE) entre estudantes universitários. Utilizou-se a teoria do comportamento planejado, levando em conta pesquisas sobre a disposição atitudinal do estudante para desenvolver o próprio negócio. A busca foi realizada mediante as palavras-chave “intenção empreendedora” e “entrepreneurial intention” nos principais periódicos internacionais e nacionais das áreas de empreendedorismo, psicologia, organizações e administração e também na base de dados Scientific Electronic Library Online (SciELO). A revisão abrangeu o período de 2004 a 2015. Foram analisados 60 artigos. Constatou-se ter havido um crescimento de 41% dos estudos sobre IE entre 2004 e 2015, em diversos países e continentes, o que revela o aumento do interesse no tema. Os principais preditores individuais são: traços pessoais, motivações de realização pessoal, atitude positiva, autoeficácia, percepção de controle, lócus de controle interno, percepção de barreiras e criatividade. Os preditores contextuais são as famílias e a rede de amigos, as quais operam como modelos a ser seguidos e como suporte no desenvolvimento do negócio. Sobre a educação empreendedora (EE), os resultados são inconclusivos, especialmente levando-se em conta o contexto. Finaliza-se com algumas limitações do estudo e pontos a ser incluídos na construção de uma agenda de pesquisa.</p>
+</blockquote>
+<p><br></p>
+<h3>Pesquisas quantitativas</h3>
+<p><br></p>
+<p>BARROS, M. <em>et al</em>. Tendências das desigualdades sociais e demográficas na prevalência de doenças crônicas no Brasil, PNAD: 2003- 2008. <strong>Ciência e Saúde Coletiva</strong>,  Rio de Janeiro ,  v. 16, n. 9, p. 3755-3768, 2011.  </p>
+<blockquote>
+<p>Os objetivos do estudo foram: estimar as prevalências de doenças crônicas na população brasileira em 2008, comparando-as com as de 2003; avaliar o impacto da doença crônica no uso de serviços e nas restrições das atividades; e, analisar os diferenciais nas prevalências de doenças crônicas específicas, segundo nível de escolaridade e filiação a plano privado de saúde. Os dados foram obtidos do suplemento saúde das PNAD-2008 e 2003. As análises (prevalências e razões de prevalências brutas e ajustadas) foram feitas com o aplicativo Stata 11. A prevalência de ter ao menos uma doença crônica foi mais elevada em: idosos, mulheres, cor/raça preta ou indígena, menor escolaridade, migrantes, moradores em áreas urbanas e na região Sul do país. As condições crônicas mais prevalentes foram: hipertensão, doença de coluna, artrite e depressão. Houve, entre 2003 e 2008, aumento da prevalência de diabetes, hipertensão, câncer e cirrose, e redução de insuficiência renal crônica e tuberculose. A maioria das doenças estudadas foram mais prevalentes nos segmentos de menor escolaridade e sem plano de saúde. As maiores diferenças entre os segmentos sociais foram observadas nas prevalências de cirrose, insuficiência renal crônica, tuberculose e artrite/reumatismo.</p>
+</blockquote>
+<p>SAPORI, L.; SANTOS, R.;  MAAS, L. Fatores sociais determinantes da reincidência criminal no Brasil: o caso de Minas Gerais. <strong>Revista Brasileira de Ciências Sociais</strong>, v. 32, n. 94, 2017.</p>
+<blockquote>
+<p>Esse artigo resulta de pesquisa realizada no estado de Minas Gerais no biênio 2014-2015. Seu objetivo foi calcular a taxa de reincidência criminal do sistema prisional do estado. Além disso, procurou-se analisar se o perfil dos presos reincidentes é diferente dos não reincidentes, e ainda, demonstrar possíveis fatores individuais explicativos da reincidência, como atributos sociodemográficos e histórico criminal. A partir de dados referentes aos presos egressos das penitenciárias do estado em 2008, identificamos a probabilidade de reincidência em até cinco anos após a soltura. Os resultados demonstraram que a taxa de reincidência criminal é inferior aos patamares geralmente divulgados pelos meios de comunicação, como também demonstraram que a chance de reincidir foi maior entre indivíduos do sexo masculino, mais jovens, com trajetória criminal mais extensa, que iniciaram essa carreira mais cedo e que praticaram crimes contra o patrimônio, em especial os furtos.</p>
+</blockquote>
+<p>MACHADO, A. <em>et al</em>. Consumo de bens e serviços culturais e alocação de tempo no Brasil. <strong>Nova Economia</strong>, v.27, n.1, p. 35-63 2017.</p>
+<blockquote>
+<p>O consumo de cultura é uma atividade intensiva em tempo, de modo que as escolhas ligadas a esta ação são restritas tanto pela renda quanto pelo tempo disponível para o consumo. Este artigo combina duas bases de dados secundários, a Pesquisa de Orçamentos Familiares e a Pesquisa Nacional por Amostra de Domicílios, para discutir a alocação de tempo e o consumo de bens e serviços culturais no Brasil. Os resultados sugerem que a disponibilidade de tempo é positivamente correlacionada ao consumo cultural. No entanto, nível de escolaridade e participação no mercado de trabalho são determinantes decisivos do gasto em cultura. Dados esses resultados, os baixos níveis de consumo de cultura no Brasil são possivelmente mais relacionados à ausência de hábito que à ausência de tempo ou de recursos monetários.</p>
+</blockquote>
+<p>TERCI, E.; GOULART, J.;  OTERO, E. Dinâmica econômica e empresariamento urbano em cidades médias sob o impacto da reestruturação produtiva. <strong>Nova Economia</strong>, v. 27, n. 1, p. 143-172, 2017.</p>
+<blockquote>
+<p>O artigo analisa comparativamente processos contemporâneos de desenvolvimento urbano de cidades médias, tendo em conta o processo de reestruturação produtiva no contexto da liberalização econômica a partir da década de 1990 até 2011. A base empírica consistiu de três cidades médias do interior paulista: Piracicaba, Bauru e Rio Claro. Os dados sobre o desenvolvimento econômico e o gasto público evidenciam o predomínio de interesses empresariais na gestão dessas cidades com a finalidade de torná-las atrativas para as inversões privadas, ensejando o empresariamento das cidades. A ação do poder público local se revelou determinante para a dinamização da economia urbana e regional. Esse cenário está ligado, de um lado, ao esvaziamento do Estado e de suas políticas de desenvolvimento urbano e regional e, de outro, ao novo papel destacado dos municípios no esforço de readequação de suas estruturas produtivas visando a atrair os empreendimentos privados.</p>
+</blockquote>
+<p>SIMOES, P.; ALVES, J.;  SILVA, P.. Transformações e tendências do mercado de trabalho no Brasil entre 2001 e 2015: paradoxo do baixo desemprego? <strong>Revista Brasileira de Estudos da População</strong>, v. 33, n.3, p. 541-566, 2016.  </p>
+<blockquote>
+<p>A economia brasileira, favorecida pelos superciclo das commodities, teve uma década de crescimento e relativa estabilidade macroeconômica, em que o mercado de trabalho apresentou um desempenho bastante favorável. Contudo, houve uma desaceleração do Produto Interno Bruto (PIB), seguida de forte recessão em 2015 e 2016. Houve uma defasagem grande entre o início da desaceleração da economia e seus primeiros efeitos sobre o mercado de trabalho, o chamado paradoxo do baixo desemprego. O objetivo deste artigo é analisar tal fenômeno, utilizando as duas principais pesquisas que abordam o tema emprego no âmbito do Instituto Brasileiro de Geografia e Estatística: a Pesquisa Nacional por Amostra de Domicílios e a Pesquisa Mensal de Emprego. Recorrendo à metodologia de decomposições da variação da taxa de desocupação, constatou-se que a parcela mais expressiva tanto da redução anterior da taxa de desocupação, quanto do seu aumento atual, ocorreu nas metrópoles, e que grande parte de seu comportamento pode ser explicado pela redução da participação dos mais jovens, das pessoas menos instruídas e pela redução no ritmo de inserção das mulheres no mercado de trabalho. O perfil etário da desocupação no país tornou-se mais jovem, o que traz preocupações quanto à emergência de uma “geração perdida”.</p>
+</blockquote>
+<p>REIS, C.; NORONHA, K.;  WAJNMAN, S. Envelhecimento populacional e gastos com internação do SUS: uma análise realizada para o Brasil entre 2000 e 2010. <strong>Revista Brasilera de Estudos da População</strong>, v. 33, n.3, p. 591-612, 2016.</p>
+<blockquote>
+<p>A população mundial vem experimentando um processo gradativo de envelhecimento de sua estrutura etária, em função da queda acentuada da fecundidade e da mortalidade nas últimas décadas. Esse processo, que está em curso em praticamente todos os países do mundo, traz à tona a preocupação com o crescimento das despesas em saúde. O objetivo do presente artigo é avaliar o efeito das mudanças da estrutura etária nos gastos com internação do Sistema Único de Saúde do Brasil. Para tanto, foi realizada uma decomposição dos gastos em saúde, utilizando o método Tchoe e Nam, adaptado para a realidade do caso brasileiro. A decomposição também é feita considerando três grupos de doenças: infecciosas e parasitárias, neoplasias e circulatórias. Os dados são provenientes do Sistema de Informações Hospitalares (SIH-SUS). De forma geral, os resultados encontrados mostram a importância da variação na estrutura etária (envelhecimento populacional) nos gastos das internações hospitalares do SUS entre 2000 e 2010, principalmente para os grupos de doenças associados a uma população mais envelhecida, doenças circulatórias e neoplasia.</p>
+</blockquote>
+<p>SILVA JUNIOR, W.;  GONCALVES, F. Evidências da relação entre a frequência no ensino infantil e o desempenho dos alunos do ensino fundamental público no Brasil. <strong>Revista Brasilera de Estudos da População</strong>, v. 33, n.2, p. 283-301, 2016.</p>
+<blockquote>
+<p>Este artigo tem por objetivo estimar o impacto da frequência ao ensino infantil na proficiência dos alunos do ensino fundamental público no Brasil, utilizando como proxy as notas dos alunos em português e matemática disponíveis na Prova Brasil 2011. Foi empregada a metodologia de pareamento nos escores de propensão sob a hipótese de seleção por variáveis observáveis, que tem por finalidade encontrar um contrafactual. Para controlar as características relacionadas ao desempenho, foram estimadas regressões lineares pelo método duplamente robusto dos mínimos quadrados ponderados pelos escores de propensão. Encontraram-se efeitos positivos e significantes estatisticamente sobre as notas de português e matemática do 5º e 9º anos para alunos que frequentaram a pré-escola e a creche em comparação com aqueles que iniciaram os estudos diretamente no ensino fundamental.</p>
+</blockquote>
+<p>MONTEIRO, F.;  LIMA, J. Desindustrialização regional no Brasil. <strong>Nova Economia</strong>, v. 27, n.2, p.247-293, 2017.</p>
+<blockquote>
+<p>Este trabalho tem como objetivo analisar, por uma perspectiva inédita, possíveis indícios de desindustrialização na economia brasileira. Para tanto, analisamos dados regionais e estaduais referentes ao período de 1985 a 2010, utilizando indicadores de desindustrialização já consagrados. Adicionalmente, são analisadas diferenças regionais da relação VTI/VBPI e discute-se sobre ganhadores e perdedores do ponto de vista setorial e regional, ponderando-se razões para o comportamento divergente do processo por região. Por fim, estima-se um modelo paramétrico regredindo participação da indústria de transformação regional no PIB da região e renda per capita regional. Conclui-se que, em nível regional, as regiões Sudeste, Sul e Nordeste acumulam indícios de desindustrialização, enquanto as demais regiões seguem padrão inverso, levando a crer que a desindustrialização brasileira é, em parte, também uma descentralização espacial (regional) da produção industrial e que o processo de desindustrialização brasileiro difere entre as regiões acometidas pelo processo.</p>
+</blockquote>
+<p>CUNHA, M.;  VASCONCELOS, M. Fecundidade e participação no mercado de trabalho brasileiro. <strong>Nova Economia</strong>, v. 26, n. 1, p. 179-206, 2016.</p>
+<blockquote>
+<p>Este trabalho analisa os determinantes da fecundidade e da participação das mulheres no mercado de trabalho brasileiro. São utilizadas as informações da Pesquisa Nacional por Amostra de Domicílio do IBGE, de 1995 até 2009, e o modelo probit bivariado. Conforme o esperado, observou-se queda da fecundidade e aumento da participação no período estudado, bem como efeito negativo dos salários na probabilidade de fecundidade e positivo na probabilidade de participação no mercado de trabalho. Além disso, outras variáveis de controle incluídas relacionadas às características pessoais, condição na família e local de residência também afetam a fecundidade e a inserção das mulheres. Ademais, verificou-se que, na cauda inferior da distribuição da renda domiciliar, o efeito dos salários na fecundidade é maior, mas, no caso do engajamento no mercado de trabalho, é menor.</p>
+</blockquote>
+<p>SILVA, R.; BERTELLA, M.;  PEREIRA, R. Mercado de ações brasileiro: uma investigação empírica sobre suas relações de longo prazo e de precedência temporal pré-crise de 2008. <strong>Nova Economia</strong>, v. 24, n. 2, p. 317-336, 2014.</p>
+<blockquote>
+<p>Este estudo investiga empiricamente se variáveis macroeconômicas nacionais (produção industrial, inflação, taxa de juros real, risco de crédito doméstico e câmbio real) e internacionais (índice da bolsa de valores americana, a taxa de juros americana e o preço de petróleo) podem explicar o comportamento de longo e/ou de curto prazo do índice da Bolsa de Valores de São Paulo (Ibovespa) no período de 1995 a 2007, dados de frequência mensal. Aplicou-se metodologia econométrica de modelos de correção de erro resultando em evidências de relação de longo prazo positiva com o Ibovespa para a bolsa americana e o preço do petróleo e negativa para a taxa de juros americana e o risco de crédito. Do ponto de vista dinâmico, identificou-se o Ibovespa como única variável de ajuste para desvios da relação de longo prazo e precedência temporal significativa para a maior parte das variáveis, indicando a possibilidade de avaliação antecedente do comportamento futuro do indicador da bolsa brasileira.</p>
+</blockquote>
+<p>MACHADO, D.;  SILVA, A. Um indicador de não satisfação no trabalho e a mobilidade do mercado de trabalho: um estudo para homens e mulheres. <strong>Nova Economia</strong>, v. 24, n. 1, p. 123-140, 2014.</p>
+<blockquote>
+<p>Existem evidências na literatura internacional de que medidas de não satisfação no trabalho podem funcionar como boas preditoras para as saídas do mercado de trabalho. Desta forma, essas medidas seriam informativas para o entendimento das diferenças de mobilidade no mercado de trabalho entre homens e mulheres, complementando outros indicadores de trabalho comumente utilizados. Os trabalhadores insatisfeitos na ocupação são provavelmente os que mais contribuem para o aumento da rotatividade no mercado de trabalho, sendo mais vulneráveis ao desemprego, à inatividade ou à inserção de forma autônoma. Utilizaremos como proxy para a não satisfação no trabalho a variável que identifica se o indivíduo ocupado tomou alguma providência para conseguir trabalho. Nossos resultados mostram que a insatisfação no trabalho é um determinante importante da probabilidade de o trabalhador ficar inativo ou desempregado e de transitar para uma ocupação autônoma.</p>
+</blockquote>
+<p>COSTA, L.; ARRAES, R.;  GUIMARAES, D. Estabilidade dos professores e qualidade do ensino de escolas públicas. <strong>Economia Aplicada</strong>, v. 19, n. 2, p. 261-298, p. 2015.</p>
+<blockquote>
+<p>Propõe-se analisar o efeito da estabilidade dos professores sobre a qualidade do ensino fundamental nas escolas públicas brasileiras, considerando que a decisão de tornar-se docente também envolve fatores não pecuniários relacionados aos benefícios de ingressar no setor público. Com base nos dados mais recentes do exame Prova Brasil (2011) para estudantes do 5º ano do ensino fundamental, aplicou-se a metodologia de Pareamento no Escore de Propensão para múltiplos tratamentos com o objetivo de contornar o possível viés de seleção das escolas decorrente da correlação entre o benefício da estabilidade dos professores com fatores relacionados aos salários e aos critérios de admissão dos alunos. Objetivando prover robustez nos resultados, conduziu-se uma Análise de Sensibilidade proposta por (Ichino et al., 2006), que simula a possibilidade da presença de uma variável não observada, a qual invalidaria a suposição de independência condicional necessária para identificar a relação de causalidade. Em comparação com os efeitos ambíguos dispostos na literatura acerca dos salários dos professores sobre o desempenho estudantil, demonstra-se, para todas as regiões do país, que quanto maior a falta de professores com estabilidade menor o desempenho dos estudantes, resultado este que se traduz no aprendizado dos alunos.</p>
+</blockquote>
+<p>CAMPARA, J.;  VIEIRA, K. Beneficiários do Programa Bolsa Família: relações com as finanças e impacto na satisfação global de vida. <strong>Nova Economia</strong>, v.26, n.3, p. 981-1006, 2016.  </p>
+<blockquote>
+<p>O objetivo do estudo é identificar as práticas, as percepções e o comportamento financeiro das beneficiárias do Programa Bolsa Família (PBF) e seus impactos na satisfação global de vida. Para isso, aplicaram-se 595 questionários, os quais foram analisados por meio de estatística descritiva e regressão linear múltipla. Os principais resultados revelam a predominância das mulheres na gestão financeira dessas famílias que se encontram em situação financeira difícil, contas em atraso, gastando mais do que ganham, quase não conseguindo pagar as despesas mensais e sem condições de poupança. Quanto aos fatores comportamentais, verifica-se atitude financeira, atitude ao endividamento e bem-estar financeiro medianos, comportamento financeiro favorável, baixo nível de conhecimento financeiro e satisfação global de vida positiva. A regressão linear múltipla indicou que pessoas com elevada percepção de bem-estar financeiro, atitude e comportamento financeiros adequados, baixo nível de poupança e ausência de dívida visualizam melhor satisfação global de vida.</p>
+</blockquote>
+<p><br></p>
+<h3>Pesquisas qualitativas</h3>
+<p><br></p>
+<p>CAVALCANTI, M. Do barraco à casa: tempo, espaço e valor(es) em uma favela consolidada. <strong>Revista Brasileira Ciências Sociais</strong>, v. 24, n. 69, p. 69-80, 2009.</p>
+<blockquote>
+<p>Este artigo constitui uma análise etnográfica do fenômeno da consolidação de favelas no Rio de Janeiro contemporâneo, concebido aqui como resultado da justaposição de dois processos sócio-históricos aparentemente contraditórios: (1) a substituição, pelo Estado, de programas de remoção por programas de urbanização, que deu origem um boom na construção civil, e à mercantilização sem precedentes do espaço das favelas; (2) a apropriação do espaço da favela pelo tráfico de drogas, que (re)produz e reforça as fronteiras físicas, sociais e simbólicas entre a favela e o dito "asfalto". Esse contexto é aqui explorado a partir de uma concepção da casa como fato social total: a passagem do barraco de estuque à casa de alvenaria (convertida cada vez mais em "fortaleza") torna legível a maneira pela qual o espaço da favela, e sobretudo da casa, constitui-se como processo, projeto de futuro e instância produtora de valores - tanto monetários como subjetivos.</p>
+</blockquote>
+<p>PICCOLI, P.; GODOI, C. Motivação para o trabalho voluntário contínuo: uma pesquisa etnográfica em uma organização espírita. <strong>Organizações &amp; Sociedade</strong>, v. 19, n. 62, p. 399-416, 2012.</p>
+<blockquote>
+<p>Este trabalho tem por objetivo compreender os fatores que influenciam a motivação para o trabalho voluntário contínuo em um núcleo espírita localizado no sul do Brasil. O estudo foi conduzido por meio do método qualitativo, com a utilização da estratégia da pesquisa etnográfica. Foram utilizadas técnicas de observação participante e entrevista em profundidade, além da consulta a documentos e informações dos dirigentes. Para análise e categorização do material, utilizou-se um modelo analítico desenvolvido por Penner (2002), composto por características demográficas, categorias disposicionais, categorias organizacionais e identidade do papel voluntário. Constatou-se que as características demográficas não influenciam o voluntariado contínuo. No entanto, determinadas categorias disposicionais - crenças e valores pessoais, personalidade pró-social e motivos relacionados a voluntariado - denotam influenciar o fenômeno estudado. Quanto às categorias organizacionais, concluiu-se que os atributos e práticas organizacionais, também, influenciam o voluntariado contínuo. Não ficou evidenciado se o relacionamento com a organização influencia o voluntariado contínuo.</p>
+</blockquote>
+<p>BEUREN, I.; ALMEIDA, D.. Impactos da implantação das normas internacionais de contabilidade na controladoria: um estudo à luz da teoria da estruturação em uma empresa têxtil. <strong>Revista de Administração</strong>,  v. 47, n. 4, p. 653-670, 2012.</p>
+<blockquote>
+<p>Estudos relativos às atividades da Controladoria que se inter-relacionam com outras ciências, como Psicologia e Sociologia, favorecem conhecimentos mais holísticos sobre essa área organizacional. Assim, neste estudo objetiva-se verificar os impactos da implantação das normas internacionais de contabilidade na controladoria à luz da Teoria da Estruturação. O pressuposto é que o processo de implantação das normas internacionais vem contribuir para a produção e a reprodução da ordem social da área organizacional controladoria. A Teoria da Estruturação de Giddens (1979; 1996; 2003) sustenta esta pesquisa exploratória, com abordagem qualitativa, realizada por meio de um estudo de caso em uma indústria têxtil. Nela, analisaram-se impactos da implantação das normas internacionais de contabilidade na controladoria, no período de 2008 a 2010, que abrange a fase de implantação dos CPCs na empresa, emitidos pelo Comitê de Pronunciamentos Contábeis (CPC). A coleta de dados deu-se por meio de observação, análise documental, entrevistas individuais e grupo focal. A análise das entrevistas individuais e do grupo focal foi realizada com o auxílio do software Atlas.ti. Os resultados apontaram que o processo de implantação das normas internacionais de contabilidade impactou a estrutura da área organizacional controladoria, por meio de novas atividades, discussões e mudanças nos processos e controles, além da interação dos agentes, por meio de comunicação e capacidades, permitindo a produção e a reprodução dessa área. Conclui-se que a dualidade da estrutura preconizada por Giddens (1979; 1996; 2003) ocorreu na empresa no período analisado, pois a estrutura impactou a interação e vice-versa.</p>
+</blockquote>
+<p>KISCHENER, M.; KIYOTA, N.; PERONDI, M. Sucessão geracional na agricultura familiar: lições apreendidas em duas comunidades rurais. <strong>Mundo Agrario</strong>, v. 16, n. 33, 2015.</p>
+<blockquote>
+<p>O novo padrão de modernização da agricultura e do rural, que vigora na maior parte das regiões rurais do Brasil, também se faz presente no Sudoeste do Paraná. Assim, considerando as marcas deixadas por esse processo, procurou-se verificar quais foram os fatores que interferiram na sucessão geracional e passaram a influenciar a estratégia de reprodução social da agricultura familiar. Para tanto, a partir de uma abordagem qualitativa, esta pesquisa procurou comparar duas comunidades rurais estabelecendo 25 entrevistas cada e duas sessões de grupo focal. Dos resultados deste estudo, percebeu-se que os fatores que favorecem a permanência dos jovens no meio rural foram, principalmente: a renda, a convivência na comunidade e a inclusão dos projetos de vida dos filhos nas estratégias de reprodução social da família.</p>
+</blockquote>
+<p><br></p>
+<h3>Pesquisas históricas</h3>
+<p><br></p>
+<p>MARSON, M. A indústria de transformação no Sul de Minas Gerais, 1907-1937. <strong>Revista História Econômica &amp; História de Empresas</strong>, v. 20, n. 1, p. 153-184, 2017.</p>
+<blockquote>
+<p>O objetivo do artigo é estudar a indústria de transformação em Minas Gerais em seus aspectos regionais e históricos, tendo como foco a região do Sul de Minas Gerais entre 1907 e 1937. O trabalho analisará a evolução da indústria de transformação em um período de formação industrial na região. O artigo trata de uma parte da indústria geralmente pouco estudada pela literatura para entender sua evolução no contexto regional, identificando sua importância para a economia local. A explicação para a incipiente indústria no Sul de Minas Gerais no início do século XX pode ser resgatada da determinação econômica da região no século XIX, ligada a uma economia para o atendimento de um mercado local ou regional.</p>
+</blockquote>
+<p>RIBEIRO, M. Preços de escravos em Campinas no século XIX. <strong>Revista História Econômica &amp; História de Empresas</strong>, v. 20, n. 1, p. 85-123, 2017.</p>
+<blockquote>
+<p>O artigo tem por objetivo interpretar o movimento dos preços dos escravos pertencentes à escravaria de alguns grandes proprietários de Campinas. Na segunda metade do século XIX, dois acontecimentos marcaram profundamente a sociedade e a economia campineiras: o fim do tráfico africano de escravos (1850) e a passagem da economia açucareira para a economia cafeeira.  O fim do tráfico impôs restrição à oferta de escravos justamente no momento em que a demanda por escravos estava em pleno crescimento para viabilizar a implantação da cultura cafeeira. O texto traz uma revisão da historiografia sobre o tema, complementa com uma explicação de cunho metodológico sobre o uso dos dados de preços extraídos dos inventários post mortem dos senhores de engenho e cafeicultores entre 1830-1887. Por fim, analisa os preços tomando por balizas a expansão da economia primário-exportadora cafeeira e a legislação escravista que gradualmente impôs restrições ao emprego do trabalho escravo.</p>
+</blockquote>
+        </div>
+
+    </article>
+</div>
+        </div>
+    </body>
+</html>

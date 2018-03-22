@@ -1,0 +1,57 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5% 10% 5%;
+}
+
+p {
+  font-size: 16px;
+  color: gray;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.barra {
+  overflow: hidden;
+  background-color: #333;
+  padding: 0% 0% 0% 0%;
+}
+
+.barra a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.barra a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* .barra a.active {
+  background-color: gray;
+  color: white;
+} */
+
+#curriculo {
+  font-size: 10px;
+  line-height: 50%;
+}
+
+#subtitulo {
+}
+
+#lista-index {
+  font-size: 18px;
+  line-height: 150%;
+}
+ 
+
+#gf {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="lincolnfrias">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>gabarito | lincolnfrias</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" title="lincolnfrias blog atom feed" href="/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007EE5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  font-size: 0.85em;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  font-size: 11px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  margin-bottom: 20px;
+  display: block;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #205F29;
+  background: #FFF;
+  border: 1px solid #205F29;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #000;
+}
+.index article header h2 a:hover {
+  color: #007EE5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 1000px;
+}
+/*.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}*/
+.post article .meta {
+  margin: 50px 0 100px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-inverse bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">lincolnfrias</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container post">
+
+    <article>
+        <header>
+            <!-- <h1>gabarito</h1> -->
+        </header>
+
+        <div class="article_content">
+            <h2>Capítulo 21</h2>
+<p><br></p>
+<h3>Exercícios de fixação</h3>
+<p>1- Se houver crase, é uma dedicatória. Se não houver, é apenas uma descrição.  <br>
+2- Não era talhado para obdedecer a ordens ou deixar de dizer o que pensava por respeito à hierarquia.<br>
+3- Sentado, a princípio, à minha frente, fizera, aos poucos, girar a cadeira, de forma a ficar sentado com o rosto voltado para a porta do aposento.<br>
+4- Só que nenhum dos dois pode ser tão emocionante, nem jamais foi tão disputado tão palmo a palmo ou pé a pé, topada a topada, canelada a canelada, às vezes tapa a tapa.<br>
+5- Tanto o cura quanto o barbeiro fizeram muitas e detalhadas recomendações à ama e à sobrinha, no sentido de recuperar o alquebrado corpo de nosso conhecido herói.<br>
+6- Quando ouviu a voz asimm chamá-lo, ele estava de pé à porta de sua guarita, com uma bandeira na mão, enrolada à volta do curto mastro.<br>
+7- Acreditava ter obedecido fielmente às instruções do conselho. Se fracassara, a culpa deveria ser atribuída à omissão de algum detalhe desconhecido da profecia.  <br>
+8- Devo dizer que o resultado não se fez esperar: pressentindo à tarde que a dor não chegaria ao anoitecer, vasculhei a casa à procura de um instrumento adequado de defesa.<br>
+9- A base é civil, mas quem toma conta dela é a marinha, que, além de cuidar da manutenção dos equipamentos, fornece mantimentos e monitora um treinamento para todos que pretendem ir às ilhas.<br>
+10- De portos como Pisa, Óstia e Nápoles partiam navios rumo ao Oriente Médio, à África e às ilhas britânicas. Para essa história marítima, a descoberta de Pisa é inestimável: nunca foram encontradas tantas naves antigas em bom estado.<br>
+11- À noitinha a mãe chegou, viu a caixa, mostrou-se satisfeita, dando a impressão de que já esperava a entrega do volume.<br>
+12- Levantava cedo, tomava seu café com leite e saía às pressas para a rua. Voltava, às vezes, meia hora depois. No jantar era o primeiro a chegar à mesa.<br>
+13- Perguntei por que não tinha ido à escola, respondeu que não ia mais, nunca mais, e me contou a história do cavalo. Disse que não adiantava ir à escola porque estava resolvido a fugir.<br>
+14- A moça me disse ontem que a lua estava linda. À noite me telefonou e me animou a chegar à janela.<br>
+15- O homem já estava solto, graças à intervenção do cônsul holandês, a quem ele se fez compreender com meia dúzia de palavras holandesas.<br>
+16- Outro dia fui a São Paulo e resolvi voltar à noite, uma noite de vento sul e chuva, tanto lá como aqui.<br>
+17- Caminhava passo a passo à procura de um lugar onde pudesse estar à vontade.<br>
+18- Perguntou a ela, a meia voz, se estava disposta a contar as novidades às colegas.<br>
+19- O aviso a seguir, afixado na porta de uma padaria de uma cidade do interior de São Paulo, apresenta alguns desafios em relação à linguagem culta. Reescreva-o de forma a adequá-lo ao padrão culto.<br>
+20- Os hóspedes do PMG Hotel, por estarem alojados dentro do Pantanal, terão sempre ao redor como companhia a fauna e a flora pantaneira. Os programas são pescas a piranhas, focagem de jacarés, caminhadas ecológicas, passeios à cavalo e barco a motor acompanhados de guias com prática do Pantanal.  </p>
+<p>21-<br>
+I- As pombas estão recolhidas no pombal.<br>
+II- Às pombas não resta outra alternativa.<br>
+III- Sua posição era semelhante à que defendi ontem.  <br>
+IV- São pessoas a cujas ideias fizemos referência.<br>
+V- Faz anos que não vou a festas.<br>
+VI- Para ir à festa, vou comprar um vestido novo.<br>
+VII- O comandante, oficiais e tripulação desejam-lhe uma boa viagem de regresso a casa. Esperamos que tenham gostado da experiência de estar a bordo tanto quanto nós gostamos de servi-los.  </p>
+<p>22-
+I- Entreguei o bilhete àquele homem.<br>
+II- O livro de que preciso está sobre aquela mesa.<br>
+III- Deram emprego àquela senhora.<br>
+IV- Não pertenço àquele grupo.<br>
+V- Assistimos àquela novela.  </p>
+<p>23- b<br>
+24- a<br>
+25- a<br>
+26- a<br>
+27- d<br>
+28- e<br>
+29- c<br>
+30- e<br>
+31- b<br>
+32- b <br>
+33- c<br>
+34- c<br>
+35- e<br>
+36- e<br>
+37- b<br>
+38- d<br>
+39- e  </p>
+<p>40- <br>
+a) à às a<br>
+b) a à<br>
+c) a<br>
+d) à a<br>
+e) à a<br>
+f) à a<br>
+g) a<br>
+h) à à<br>
+i) a<br>
+j) a<br>
+k) à<br>
+l) à<br>
+m) a  </p>
+<p>41- a<br>
+42- a<br>
+43- e<br>
+44- b<br>
+45- a   </p>
+<h3>Questões de exames</h3>
+<p>1- Com crase, refere-se ao sentido de "estar à sombra". Sem crase, se refere ao sentido de combater a sombra que o governo teria criado.  <br>
+2- c<br>
+3- Sim, há modificador.<br>
+4- b<br>
+5- e<br>
+6- d<br>
+7- a<br>
+8- e<br>
+9- d<br>
+10- e<br>
+11- d (?)<br>
+12- b<br>
+13- b<br>
+14- c<br>
+15- c<br>
+16- c<br>
+17- a<br>
+18- c<br>
+19- e<br>
+20- e  </p>
+<p>21-<br>
+- Não vai a festas nem a reuniões.<br>
+- Chegamos à universidade às oito horas.  </p>
+<p>22- a à as a à<br>
+23- a<br>
+24- b<br>
+25- d<br>
+26- Dirigiu-se a ela a passos lentos e disse: estou disposto a contar à senhora; não tenho coragem de falar a Mário sobre o ocorrido.<br>
+27- 1- às. 2- pelas.<br>
+28- a<br>
+29- b<br>
+30- e<br>
+31- d<br>
+32- b<br>
+33- e<br>
+34- a<br>
+35- d<br>
+36- b<br>
+37- a<br>
+38- a<br>
+39- a<br>
+40- a<br>
+41- c<br>
+42- c<br>
+43- b<br>
+44- c<br>
+45- e<br>
+46- d<br>
+47- b<br>
+48- b<br>
+49- b<br>
+50- c<br>
+51- e <br>
+52- e<br>
+53- e<br>
+54- b<br>
+55- b<br>
+56- d<br>
+57- c<br>
+58- a<br>
+59- e<br>
+60- d<br>
+61- a<br>
+62- d<br>
+63- b<br>
+64- d<br>
+65- e<br>
+66- c<br>
+67- b<br>
+68- c<br>
+69- b<br>
+70- c<br>
+71- a<br>
+72- a<br>
+73- c<br>
+74- e<br>
+75- c<br>
+76- a<br>
+77- e<br>
+78- d<br>
+79- b<br>
+80- c<br>
+81- c<br>
+82- d<br>
+83- b<br>
+84- d<br>
+85- c<br>
+86- b<br>
+87- d<br>
+88- a<br>
+89- c<br>
+90- a  </p>
+<p><br></p>
+<h2>Capítulo 25</h2>
+<p><br></p>
+<h3>Exercícios de fixação</h3>
+<p>1- Servir bebidas a menores de 18 anos constitui contravenção penal, ficando o infrator sujeito a prisão em flagrante e processo criminal.  </p>
+<p>2-<br>
+- Por que me julgas tão mal?<br>
+- Porque tenho minhas razões.<br>
+- E não declaras por quê?<br>
+- Nem eu sei o porquê.  </p>
+<p>3-  <br>
+a) a<br>
+b) a, há<br>
+c) há<br>
+d) há<br>
+e) a  </p>
+<p>4-<br>
+- Por que não veio?<br>
+- Não vim porque não quis; esta é a razão por que não vim.<br>
+- Afinal nunca se sabe o porquê das coisas.  </p>
+<p>5-<br>
+a) mal<br>
+b) mal, mau<br>
+c) mal<br>
+d) mau<br>
+e) mal<br>
+f) mal  </p>
+<p>6- <br>
+a) sessão, cessão<br>
+b) seção<br>
+c) sessão, seção, cessão  </p>
+<p>7-  <br>
+a) por quê<br>
+b) por que<br>
+c) porque<br>
+d) por que<br>
+e) por quê<br>
+f) por que, porquê<br>
+g) porquê  </p>
+<p>8-<br>
+a) Se não me trouxeres os demais presentes, ficarei aborrecido.<br>
+b) Ela caminhava à tôa pelas ruas há mais de duas horas.<br>
+c) Discutíamos acerca da questão ecológica a fim de encontrarmos uma solução para o problema.<br>
+d) Estudaram demais para a prova porque queriam ser aprovados.<br>
+e) Ele não compareceu à festa, ao invés do que havia prometido.<br>
+f) No dia a dia de um motorista sempre ocorrem imprevistos.<br>
+g) Ele foi ao encontro de uma solução para o problema que o afligia.  </p>
+<p>9- d  </p>
+<p>10- c  </p>
+<p>11-<br>
+a) a fim<br>
+b) nenhum<br>
+c) nem um<br>
+d) sobre tudo<br>
+e) sobretudo<br>
+f) tampouco<br>
+g) tão pouco<br>
+h) há cerca de  </p>
+<h3>Questões de exames</h3>
+<p>1- e<br>
+2- c<br>
+3- d<br>
+4- e<br>
+5- d  <br>
+6- 1, 2, 4, 16, 32 (?)<br>
+7- a<br>
+8- d<br>
+9- c<br>
+10- d<br>
+11- e<br>
+12- a<br>
+13- e<br>
+14- Não fazer.<br>
+15- Não fazer.<br>
+16- Não fazer.<br>
+17- Não fazer.<br>
+18- d<br>
+19- "o parasita cai na circulação". O sentido pretendido é "o parasita entra na circulação".<br>
+20- a<br>
+21- A árvore, oca, era muito elevada, tinha vinte metros: estava prestes a cair.<br>
+22- a<br>
+23- c<br>
+24- b<br>
+25- a<br>
+26- c<br>
+27- a<br>
+28- d<br>
+29- a  </p>
+        </div>
+
+    </article>
+</div>
+        </div>
+    </body>
+</html>
