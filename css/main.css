@@ -11,6 +11,11 @@ p {
   text-align: justify;
 }
 
+a {
+  color: #007EE5;
+  text-decoration: none;
+}
+
 li {
   font-size: 16px;
 }
