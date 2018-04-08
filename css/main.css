@@ -3,6 +3,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 5% 10% 5%;
+  background-color: #f8f2e9;
 }
 
 p {
@@ -22,7 +23,7 @@ li {
 
 .barra {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(189, 185, 185);
   padding: 0% 0% 0% 0%;
 }
 
