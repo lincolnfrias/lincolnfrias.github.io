@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='pt'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <script src='js/jquery.min.js'></script>
+    <style>
+    .correta {
+      color: green;
+      display: inline;
+    }
+    
+    .errada {
+      color: red;
+      display: inline;
+    }
+
+    .respostaErrada {
+      color: red;
+    }
+    
+    </style>
+
+<body>
+
+    <p>Qual é o melhor café do mundo?</p>
+    <br>
+    <form >
+    <input type="radio" name="choice" value="errada"> Pilão <br>
+    <input type="radio" name="choice" value="correta"> Da feira <br>
+    <input type="radio" name="choice" value="errada"> Bom Dia <br>
+    <input type="radio" name="choice" value="errada"> Três Corações <br>
+    </form> <br>
+
+    <button onclick="submitAnswer()">Ver respostas</button> 
+    <br>
+    <br>
+      <p id="mensagem"></p>  
+    <br>
+    
+    <script>
+    function submitAnswer() {
+      let radios = $('input[name=choice]');
+      let checked = false;
+      let userAnswer;
+      let msg = $("#mensagem").html();
+      
+      for(i = 0 ; i < radios.length; i++ ) {
+         if(radios[i].checked) {
+           checked = true; 
+           userAnswer = radios[i].value;
+         }
+      } 
+
+      // se usuário não escolheu resposta        
+      if(!checked) {
+        $("#mensagem").html("Por favor, escolha uma resposta.");
+      }
+      // resposta correta
+      else if(userAnswer === "correta") {
+        $("#mensagem").html("Resposta correta").addClass('correta');
+        // var a = $('input[value=errada]').addClass('respostaErrada');
+        // $('input[value=errada]').())
+      }
+      // resposta errada
+      else {
+        $("#mensagem").html("Resposta errada").addClass('errada');
+      }
+
+      
+    }
+    </script>
+
+
+
+
+</body>
+</html>
+

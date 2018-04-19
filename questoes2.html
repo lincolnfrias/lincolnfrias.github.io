@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+    <title>Quiz Questions And Answers</title>
+</head>
+
+<body>
+    <center><h1>Quiz Questions</h1></center>
+    <p>
+    <form name="quiz">
+<p>
+    <b>Question 1.
+    <br>He -------------------- it.<br></b>
+    <blockquote>
+<input type="radio" name="q1" value="don't like">don't like<br>
+<input type="radio" name="q1" value="doesn't like">doesn't like<br>
+<input type="radio" name="q1" value="doesn't likes">doesn't likes<br>
+</blockquote>
+
+<p><b> <br>
+
+Question 2.
+<br>They -------------------- here very often.<br></b>
+<blockquote>
+<input type="radio" name="q2" value="don't come">don't come<br>
+<input type="radio" name="q2" value="doesn't come">doesn't come<br>
+<input type="radio" name="q2" value="doesn't comes">doesn't comes<br>
+</blockquote>
+<p><b> <br>
+
+
+<input type="button"value="pontuação"onClick="getScore(this.form);"> <br> <br>
+
+Number of score out of 15 = <input type= text size 15 name= "mark"> <br><br>
+Score in percentage = <input type=text size=15 name="percentage"><br> <br>
+<input type="reset" value="reiniciar"><p></p>
+
+</form>
+
+<p>
+    <form method="post" name="Form" onsubmit="" action="">
+</form>
+
+</body>
+
+
+<script>
+var numQues = 2;
+var numChoi = 3;
+var answers = new Array(2);
+answers[0] = "doesn't like";
+answers[1] = "don't come";
+function getScore(form) {
+
+    var score = 0;
+    var currElt;
+    var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+
+
+}
+    </script>
+</html>

@@ -1,0 +1,79 @@
+<!-- https://stackoverflow.com/questions/25007169/-->
+<!-- https://stackoverflow.com/a/4464594/5745616 -->
+
+<!DOCTYPE html>
+
+<html lang='pt'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+ <body>
+    
+    <p>Qual é o melhor café do mundo?</p>
+    <br>
+    <form >
+    <input type="radio" name="choice" value="errada"> Pilão <br>
+    <input type="radio" name="choice" value="correta"> Da feira <br>
+    <input type="radio" name="choice" value="errada"> Bom Dia <br>
+    <input type="radio" name="choice" value="errada"> Três Corações <br>
+    </form> <br>
+
+    <button onclick="submitAnswer()">Ver respostas</button> 
+    <br>
+    <br>
+      <p id="mensagem"></p>  
+    <br>
+    
+    <!-- <P>1. The word which means "house" is:<BR>
+        <input type="radio" name="1.The word which means house is" value="maison">maison<BR>
+        <input type="radio" name="1.The word which means house is" value="quatre">quatre<BR>
+        <input type="radio" name="1.The word which means house is" value="soleil">soleil<BR>
+        <input type="radio" name="1.The word which means house is" value="poisson">poisson<BR>
+        </p> -->
+
+    <script>
+    function submitAnswer() {
+      let radios = document.getElementsByName("choice");
+      let i = 0; 
+      let len = radios.length;
+      let checked = false;
+      let userAnswer;
+      let msg = document.getElementById("mensagem").innerHTML;
+      
+      for( ; i < len; i++ ) {
+         if(radios[i].checked) {
+           checked = true;
+           userAnswer = radios[i].value;
+         }
+      } 
+
+      // se usuário não escolheu resposta        
+      if(!checked) {
+        document.getElementById("mensagem").innerHTML = "Por favor, escolha uma resposta.";
+      }
+      // resposta correta
+      else if(userAnswer === "correta") {
+        document.getElementById("mensagem").innerHTML = "Resposta correta.";
+        document.getElementById("mensagem").style.display = "inline";
+        document.getElementById("mensagem").style.color = 'green';
+      }
+      // resposta errada
+      else {
+        document.getElementById("mensagem").innerHTML = "Resposta errada.";
+        document.getElementById("mensagem").style.display = "inline";
+        document.getElementById("mensagem").style.color = 'red';
+
+      }
+
+      // // esconde a mensagem depois de um tempo
+      // setTimeout(function() {
+      //     document.getElementById("mensagem").style.display = "none";
+      // }, 4000 );
+      
+    }
+    </script>
+
+</body>
+</html>
+
