@@ -92,7 +92,7 @@ tr:nth-child(even) {
 }
  
 
-#gf {
+.gf {
       width: 800px;
       margin-left: auto;
       margin-right: auto;
@@ -100,4 +100,14 @@ tr:nth-child(even) {
 
 table {
   width: 50%;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#erro {
+  color: red;
+  text-decoration: line-through;
 }
