@@ -111,3 +111,7 @@ iframe {
   color: red;
   text-decoration: line-through;
 }
+
+blockquote p .ref {
+  text-align: left;
+}
