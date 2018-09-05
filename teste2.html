@@ -10,46 +10,66 @@
     <script src='js/jquery.min.js'></script>
     <script src='js/popper.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
-</head> 
-<body>   
-    
-    <br>
-    <br>
-    <div class="container">
+    <style>
 
-        <div class='row'>
-            <div class='col-sm-12'>
-                <div class='card'>
-                    <div class='card-body'>
-                        <h3>Objetivos da disciplina</h3>
-                        <ul>
-                            <li>aprender a encontrar informações relevantes e confiáveis;</li>
-                            <li>melhorar a escrita e a formatação dos seus textos;</li>
-                            <li>melhorar a apresentação em público.</li>
-                        </ul>
-                    </div>
+    #sticky-sidebar {
+    min-height: 100vh;
+}
+    </style>
+</head> 
+<body>       
+    <br>
+    <br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 px-1 bg-light" id="sticky-sidebar">
+            <div class="py-2 sticky-top">
+                <div class="nav flex-column">
+                    <a href="" class="nav-link">Sidebar</a>
+                    <a href="" class="nav-link">Link</a>
+                    <a href="" class="nav-link">Link</a>
+                    <a href="" class="nav-link">Link</a>
+                    <a href="" class="nav-link">Link</a>
+                    <a href="" class="nav-link">Link</a>
                 </div>
             </div>
         </div>
+        <div class="col" id="main">
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <div class='card'>
+                        <div class='card-body'>
+                            <h3>Objetivos da disciplina</h3>
+                            <ul>
+                                <li>aprender a encontrar informações relevantes e confiáveis;</li>
+                                <li>melhorar a escrita e a formatação dos seus textos;</li>
+                                <li>melhorar a apresentação em público.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <br>
         <br>
         <div class="row">
-            <div class="col-sm-7"> 
+            <div class="col-sm-7">
                 <div class='card'>
                     <div class='card-body'>
-                        <h3>Etapas</h3>             
+                        <h3>Etapas</h3>
                         <ol>
                             <li>escolher três vagas de emprego que te interessem.</li>
                             <li>identificar uma ou mais habilidades que te ajudariam a conseguir esse emprego.</li>
                             <li>escolher um tema de pesquisa que te ajude a desenvolver essa habilidade.</li>
                             <li>escrever um texto de cinco páginas sobre esse tema.</li>
-                            <li>transformar o texto em um artigo científico (<a href='arquivos/artigo-modelo.pdf' target='_blank'>artigo modelo</a>).</li>
-                            <li> fazer uma apresentação sobre o assunto (<a href='https://docs.google.com/presentation/d/e/2PACX-1vSblO6RhPN5DhC6zmW-wrEYo4q5bLtiBKmMbo-CgxNN6LG1A-B-7SjSMiXj9BNi3oUKt0JPZeDqtDW7/pub?start=false&loop=false&delayms=3000'>apresentação modelo</a>).</li>
+                            <li>transformar o texto em um artigo científico (<a href='arquivos/artigo-modelo.pdf' target='_blank'>artigo
+                                    modelo</a>).</li>
+                            <li> fazer uma apresentação sobre o assunto (<a href='https://docs.google.com/presentation/d/e/2PACX-1vSblO6RhPN5DhC6zmW-wrEYo4q5bLtiBKmMbo-CgxNN6LG1A-B-7SjSMiXj9BNi3oUKt0JPZeDqtDW7/pub?start=false&loop=false&delayms=3000'>apresentação
+                                    modelo</a>).</li>
                         </ol>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5"> 
+            <div class="col-sm-5">
                 <br>
                 <h5>Sites de busca de emprego</h5>
                 <ul>
@@ -64,25 +84,25 @@
         <br>
         <br>
         <div class='card'>
-            <div class='card-body'>        
+            <div class='card-body'>
                 <div class="row">
                     <div class="col-sm-7">
-                        <h5>Plano de ensino</h5>    
+                        <h5>Plano de ensino</h5>
                         <ul>
                             <li>a pesquisa: etapas, tipos e ferramentas.</li>
                             <li>a escrita científica: os artigos, as monografias e as regras da ABNT.</li>
                             <li>a avaliação das pesquisas: objetividade e critérios de cientificidade.</li>
-                        </ul>                
+                        </ul>
                     </div>
-                        <div class="col-sm-5">
-                            <h5>Distribuição dos pontos</h5>
-                            <ul>
-                                <li>primeira versão do artigo (40). Entrega: 03/12.</li>
-                                <li>segunda versão (20). Entrega: 10/12.</li>
-                                <li>apresentação (40). A partir de 10/12.</li>
-                            </ul>
-                        </div>
+                    <div class="col-sm-5">
+                        <h5>Distribuição dos pontos</h5>
+                        <ul>
+                            <li>primeira versão do artigo (40). Entrega: 03/12.</li>
+                            <li>segunda versão (20). Entrega: 10/12.</li>
+                            <li>apresentação (40). A partir de 10/12.</li>
+                        </ul>
                     </div>
+                </div>
             </div>
         </div>
         <br>
@@ -109,22 +129,24 @@
         
                 <div class="row">
                     <div class="col-sm-7">
-                        <h5>Orientações sobre as apresentações</h5>    
+                        <h5>Orientações sobre as apresentações</h5>
                         <ul>
                             <li>duração: de 5 a 10 minutos. </li>
                             <li>use pouco texto nos slides. </li>
-                            <li>Deve haver um slide para cada um dos seguintes itens: título, objetivo, conclusão e referências. </li>
+                            <li>Deve haver um slide para cada um dos seguintes itens: título, objetivo, conclusão e referências.
+                                </li>
                             <li>não leia os slides durante sua apresentação. </li>
                             <li>fale olhando para a plateia, não para os slides ou para o professor. </li>
                             <li>faça chamadas nos slides onde houver citações indiretas ou diretas. </li>
                         </ul>
                     </div>
                     <div class="col-sm-5">
-                        <h5>Critérios de avaliação das apresentações <br> (10 pontos cada)</h5>                
+                        <h5>Critérios de avaliação das apresentações <br> (10 pontos cada)</h5>
                         <ul>
-                            <li>organização: apresentação com começo, meio e fim; capacidade de síntese; clareza na exposição etc. </li>
-                            <li>domínio do conteúdo: precisão, desenvoltura e consistência ao expor fatos e argumentos; conhecimento sobre as fontes
-                                utilizadas etc. </li>
+                            <li>organização: apresentação com começo, meio e fim; capacidade de síntese; clareza na exposição etc.
+                                </li>
+                            <li>domínio do conteúdo: precisão, desenvoltura e consistência ao expor fatos e argumentos; conhecimento
+                                sobre as fontes utilizadas etc. </li>
                             <li>tempo: se manter entre 5 e 10 minutos.</li>
                             <li>fluência: fala contínua, vocabulário técnico, empostação da voz etc.</li>
                         </ul>
@@ -132,29 +154,12 @@
                 </div>
             </div>
         </div>
-
-   </div>
+    </div>
+    </div>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
-    Se quiser aprender a montar uma página como essa, veja o código dela no <a href='https://github.com/lincolnfrias/lincolnfrias.org'>GitHub</a> . Divirta-se!
-    </footer>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109249141-1"></script>
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-109249141-1');
-    </script>
+</div>
 </body>
 </html>
 
