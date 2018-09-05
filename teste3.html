@@ -3,18 +3,36 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title></title>
 <style>
     body {
+        font-family: Source Sans Pro;
         margin: 0;
-        font-family: "Lato", sans-serif;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px 0px;
+    }
+
+    .grid-container > div {
+        border: 0.25px solid lightgray;
+        padding: 10px;
+    }
+
+    .box1 {
+        border: 0.25px solid lightgray;
+        padding: 10px;
     }
 
     .sidebar {
         margin: 0;
         padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
+        width: 150px;
+        background-color: lightgray;
         position: fixed;
         height: 100%;
         overflow: auto;
@@ -28,7 +46,7 @@
     }
 
     .sidebar a.active {
-        background-color: #4CAF50;
+        background-color: gray;
         color: white;
     }
 
@@ -38,8 +56,8 @@
     }
 
     div.content {
-        margin-left: 200px;
-        padding: 1px 16px;
+        margin-left: 150px;
+        padding: 1px 10px;
         height: 1000px;
     }
 
@@ -63,74 +81,76 @@
             float: none;
         }
     }
+
+    a {
+        color: #007EE5;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline; 
+    }
+
+    a:focus {
+        color: gray;
+    }
 </style>
 </head>
 
 <body>
 
     <div class="sidebar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a class="active" href="#home">início</a>
+        <a href="#news">tarefas</a>
+        <a href="#contact">plano de ensino</a>
+        <a href="#about">referências</a>
     </div>
+
+    <br>
+    <br>
+    <br>
 
     <div class="content">
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px
-            or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the
-            navigation links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
+        <div class='box1'>
+        <h3>Objetivos da disciplina</h3>
+        <ul>
+            <li>aprender a encontrar informações relevantes e confiáveis;</li>
+            <li>melhorar a escrita e a formatação dos seus textos;</li>
+            <li>melhorar a apresentação em público.</li>
+        </ul>
 
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
+        </div>
+        <div class="grid-container">
+            <div class="item1">
+                <h3>Etapas</h3>
+                <ol>
+                    <li>escolher três vagas de emprego que te interessem.</li>
+                    <li>identificar uma ou mais habilidades que te ajudariam a conseguir esse emprego.</li>
+                    <li>escolher um tema de pesquisa que te ajude a desenvolver essa habilidade.</li>
+                    <li>escrever um texto de cinco páginas sobre esse tema.</li>
+                    <li>transformar o texto em um artigo científico (<a href='arquivos/artigo-modelo.pdf' target='_blank'>artigo modelo
+                        </a>).</li>
+                    <li> fazer uma apresentação sobre o assunto (<a href='https://docs.google.com/presentation/d/e/2PACX-1vSblO6RhPN5DhC6zmW-wrEYo4q5bLtiBKmMbo-CgxNN6LG1A-B-7SjSMiXj9BNi3oUKt0JPZeDqtDW7/pub?start=false&loop=false&delayms=3000'>apresentação
+                            modelo
+                        </a>).</li>
+                </ol>
 
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
+            </div>
+            <div class="item2">
+                <h5>Sites de busca de emprego</h5>
+                <ul>
+                    <li><a href='http://bit.ly/2MSvXL5' target='_blank'>Google Empregos</a></li>
+                    <li><a href='https://www.vagas.com.br' target='_blank'>vagas.com.br</a></li>
+                    <li><a href='https://www.indeed.com.br' target='_blank'>indeed.com.br</a></li>
+                    <li><a href='https://www.lovemondays.com.br' target='_blank'>lovemondays.com.br</a></li>
+                    <li><a href='https://www.trabalhabrasil.com.br' target='_blank'>trabalhabrasil.com.br</a></li>
+                </ul>
+            </div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+        </div>
 
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-
-        <h2>Responsive Sidebar Example</h2>
-        <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation
-            links.</p>
-        <h3>Resize the browser window to see the effect.</h3>
+    
     </div>
-
-</body>
     </body>
 </html>
