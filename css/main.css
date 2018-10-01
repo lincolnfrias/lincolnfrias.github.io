@@ -115,3 +115,16 @@ iframe {
 blockquote p .ref {
   text-align: left;
 }
+
+/* img center  */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    max-width:450px;
+    max-height:450px;
+    width:auto;
+    height:auto;
+}
