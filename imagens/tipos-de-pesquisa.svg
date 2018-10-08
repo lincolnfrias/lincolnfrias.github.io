@@ -8,13 +8,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="0 0 960 720"
+   viewBox="0 0 895.7962 434.14014"
    stroke-miterlimit="10"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="tipos-de-pesquisa.svg"
-   width="960"
-   height="720"
+   width="895.7962"
+   height="434.14014"
    style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10">
   <metadata
      id="metadata95">
@@ -24,11 +24,35 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs93" />
+     id="defs93">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3453">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect3455"
+         width="908.02551"
+         height="418.85352"
+         x="24.458599"
+         y="22.92993" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3459">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect3461"
+         width="895.7962"
+         height="434.14014"
+         x="33.630573"
+         y="19.872604" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,17 +62,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1280"
+     inkscape:window-height="696"
      id="namedview91"
      showgrid="false"
      inkscape:zoom="0.32708333"
-     inkscape:cx="480"
-     inkscape:cy="360"
+     inkscape:cx="421.91083"
+     inkscape:cy="-184.20381"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <clipPath
      id="p.0">
     <path
@@ -58,8 +86,9 @@
        style="clip-rule:nonzero" />
   </clipPath>
   <g
-     clip-path="url(#p.0)"
-     id="g7">
+     clip-path="url(#clipPath3459)"
+     id="g7"
+     transform="translate(-33.630573,-19.872604)">
     <path
        d="m 0,0 960,0 0,720 -960,0 z"
        id="path9"
