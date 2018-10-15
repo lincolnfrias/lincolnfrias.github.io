@@ -1,0 +1,26 @@
+body{
+  background-color: #f8f6f0;
+  padding: 5% 5% 5% 5%;
+}
+
+button{
+    background-color: #279;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: #38a;
+}
+
+.explicacao {
+    border: 1px solid lightgray;
+    padding: 0px 5px 5px 5px;
+    margin-top: 20px;
+    font-size: 12px;
+    width: 400px;
+}
