@@ -59,7 +59,7 @@ const myQuestions = [
         correctAnswer: "a",
     },
     {
-        question: "Ainda ___ pouco, o professor referia-se ___ questões interligadas ___ prática de ensino",
+        question: "Ainda ___ pouco, o professor referia-se ___ questões interligadas ___ prática de ensino.",
         answers: {
             a: "a - à - a",
             b: "há - à - à",
@@ -158,7 +158,7 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "Nas compras ___ vista ou ___ prazo, o desconto oferecido ___ clientela é praticamente o mesmo",
+        question: "Nas compras ___ vista ou ___ prazo, o desconto oferecido ___ clientela é praticamente o mesmo.",
         answers: {
             a: "à - à - a",
             b: "à - a - à",
@@ -191,7 +191,7 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "___ muito tempo, devido ___ condições político-econômicas do país, não é dado ___ população o direito de viver ___ salvo de sobressaltos financeiros",
+        question: "___ muito tempo, devido ___ condições político-econômicas do país, não é dado ___ população o direito de viver ___ salvo de sobressaltos financeiros.",
         answers: {
             a: "a - as - à - à",
             b: "à - às - à - a",
