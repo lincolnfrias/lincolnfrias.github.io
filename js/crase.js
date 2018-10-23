@@ -92,7 +92,7 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "Assinale a crase está correta em todos os casos.",
+        question: "Assinale a alternativa em que a crase está correta em todos os casos.",
         answers: {
             a: "À todas as pessoas de bem, é garantido o direito à regalias no clube.",
             b: "Daqui à uma semana, irei à Campinas atender à algumas pessoas.",
