@@ -37,48 +37,26 @@ const myQuestions = [
         correctAnswer: "a",
     },
     {
-        question: "Eu já conhecia ___ fazenda, por isso fui ___ cidade apreciar ___ praças onde fiz referências ___ V.S.ª e não ___ Sr.ª que o acompanha.",
+        question: "Eu já conhecia ___ fazenda, por isso fui ___ cidade apreciar ___ praças.",
         answers: {
-            a: "a - a - às - a - a",
-            b: "à - à - as - à - à",
-            c: "a - à - as - a - à",
-            d: "a - à - as - à - à",
-            e: "à - à - as - a - a"
+            a: "a - a - às",
+            b: "à - à - as",
+            c: "a - à - as",
+            d: "a - à - às",
+            e: "à - à - as"
         },
         correctAnswer: "c",
     },
     {
-        question: "Chegar cedo ___ repartição. Lá ___ de estar outra vez o Horácio conversando ___ uma das portas com Clementino.",
+        question: "O estudo referia-se ___ questões ligadas ___ venda de imóveis, não __ questões do agronegócio.",
         answers: {
-            a: "à - há - a",
-            b: "à - há - à",
-            c: "a - há - a",
-            d: "à - a - a",
-            e: "a - a - à"
-        },
-        correctAnswer: "a",
-    },
-    {
-        question: "Ainda ___ pouco, o professor referia-se ___ questões interligadas ___ prática de ensino.",
-        answers: {
-            a: "a - à - a",
-            b: "há - à - à",
-            c: "à - à - à",
-            d: "há - a - à",
-            e: "a - a - a"
+            a: "à - a - as",
+            b: "à - à - as",
+            c: "à - à - às",
+            d: "a - à - às",
+            e: "a - a - às"
         },
         correctAnswer: "d",
-    },
-    {
-        question: "O grupo obedece ___ comando de um pernambucano, radicado ___ tempos em São Paulo, e se exibe diariamente ___ hora do almoço.",
-        answers: {
-            a: "o, a, à",
-            b: "ao, há, à",
-            c: "ao, a, a",
-            d: "o, há, a",
-            e: "o, a, a"
-        },
-        correctAnswer: "b",
     },
     {
         question: "___ seis horas da manhã, já estávamos ___ esperar o trem que nos levaria ___ cidadezinha, de onde iríamos, ___ cavalo, ___ fazenda do Sr. Juca.",
@@ -103,7 +81,7 @@ const myQuestions = [
         correctAnswer: "a",
     },
     {
-        question: "Falando ___ equipe que ___ aguardava desde cedo, a socióloga apresentou ___ proposta inicial de seu trabalho.",
+        question: "Falando ___ equipe que ___ aguardava desde cedo, a diretora da empresa apresentou ___ proposta inicial de seu plano de negócios.",
         answers: {
             a: "à - à - à",
             b: "à - a - a",
@@ -114,29 +92,29 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "Assinale a alternativa em que o acento indicativo de crase está corretamente empregado em todos os casos.",
+        question: "Assinale a crase está correta em todos os casos.",
         answers: {
-            a: "Foram feitas referências elogiosas à família e à pessoa do desembargador na reunião.",
-            b: "À todas as pessoas de bem, é garantido o direito à regalias no clube.",
-            c: "Daqui à uma semana, irei à Campinas atender à algumas pessoas.",
+            a: "À todas as pessoas de bem, é garantido o direito à regalias no clube.",
+            b: "Daqui à uma semana, irei à Campinas atender à algumas pessoas.",
+            c: "Foram feitas referências elogiosas à família e à pessoa do sócio majoritário na reunião.",
             d: "Quando menos se esperam apelos à favor de mudanças, eles acontecem a beça.",
             e: "Às duas horas, sairemos à procura de alguém que possa ficar frente à frente com o preso."
         },
-        correctAnswer: "a",
+        correctAnswer: "c",
     },
     {
         question: "Ainda ___ pouco, eu ___ vi atravessando aquela rua, ali ___ direita.",
         answers: {
-            a: "há - a - à",
-            b: "há - a - a",
-            c: "a - a - a",
-            d: "a - à - à",
+            a: "há - a - a",
+            b: "a - a - a",
+            c: "a - à - à",
+            d: "há - a - à",
             e: "à - a - a"
         },
-        correctAnswer: "a",
+        correctAnswer: "d",
     },
     {
-        question: "O aluno fará ___ tempo as correções relativas ___ respostas dadas ao examinador.",
+        question: "Assumo o compromisso de que faremos  ___ tempo as correções relativas ___ sugestões da auditoria.",
         answers: {
             a: "há - as",
             b: "à - às",
@@ -147,7 +125,7 @@ const myQuestions = [
         correctAnswer: "c",
     },
     {
-        question: "Aguardava ___ carta ___ muito tempo e, como não chegasse, ele referia-se ___ todo instante ___ consequências desastrosas que ___ demora tenderia ___ provocar.",
+        question: "Aguardava ___ decisão ___ muito tempo, por isso, ele referia-se ___ todo instante ___ consequências desastrosas que ___ demora tenderia ___ provocar.",
         answers: {
             a: "a - a - a - às - a - a",
             b: "a - há - a - às - a - a",
@@ -180,7 +158,7 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "Nesta oportunidade, volto ___ referir-me ___ problemas já expostos ___ V. S.ª ___ alguns dias.",
+        question: "Hoje, volto ___ referir-me ___ problemas já expostos ___ você ___ alguns dias.",
         answers: {
             a: "à, àqueles, a, há",
             b: "a, àqueles, a, há",
@@ -202,13 +180,13 @@ const myQuestions = [
         correctAnswer: "c",
     },
     {
-        question: "Saiu de casa ___ oito horas da manhã, ___ escondidas, só retornando ___ noite, dirigindo-se __________ aposento suspeito.",
+        question: "Saiu de casa ___ oito horas da manhã, só retornando ___ noite, depois de ir __________ reunião suspeita.",
         answers: {
-            a: "às - as - a - aquele",
-            b: "as - às - à - àquele",
-            c: "às - às - à - aquele",
-            d: "às - às - a - aquele",
-            e: "às - às - à - àquele"
+            a: "às - a - aquela",
+            b: "as - à - àquela",
+            c: "às - à - aquela",
+            d: "às - a - aquela",
+            e: "às - à - àquela"
         },
         correctAnswer: "e"
     }
