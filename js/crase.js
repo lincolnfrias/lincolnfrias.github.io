@@ -185,7 +185,7 @@ const myQuestions = [
             a: "às - a - aquela",
             b: "as - à - àquela",
             c: "às - à - aquela",
-            d: "às - a - aquela",
+            d: "às - a - àquela",
             e: "às - à - àquela"
         },
         correctAnswer: "e"
