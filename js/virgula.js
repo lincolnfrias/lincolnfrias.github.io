@@ -37,13 +37,13 @@ const myQuestions = [
         correctAnswer: "c",
     },
     {
-        question: "Assinale a alternativa em que a frase entre colchetes, necessariamente deve estar entre vírgulas.",
+        question: "Assinale a alternativa correta.",
         answers: {
-            a: "O presidente da República [que parte para mais uma viagem ao exterior na próxima semana] reuniu os ministros para definir estratégias a fim de combater a fome no Brasil.",
-            b: "Os integrantes da comissão [que se mostrarem contrários ao que foi decidido] devem ser substituídos.",
-            c: "O candidato [que não concordar com a divulgação das pesquisas de opinião] poderá entrar com processo na justiça.",
-            d: "O funcionário público [que for contratado depois da alteração da lei da aposentadoria] não terá mais salário integral quando se aposentar.",
-            e: "O eleitor [que se sentir ultrajado pelas campanhas eleitorais] poderá dar uma resposta a esses abusos nas urnas."
+            a: "O presidente da República, que parte para mais uma viagem ao exterior na próxima semana, reuniu os ministros para definir estratégias a fim de combater a fome no Brasil.",
+            b: "Os integrantes da comissão que se mostrarem contrários, ao que foi decidido devem ser substituídos.",
+            c: "O candidato que não concordar, com a divulgação das pesquisas de opinião poderá entrar com processo na justiça.",
+            d: "O funcionário público que, for contratado depois da alteração da lei da aposentadoria não terá mais salário integral quando se aposentar.",
+            e: "O eleitor que se sentir, ultrajado pelas campanhas eleitorais, poderá dar uma resposta a esses abusos nas urnas."
         },
         correctAnswer: "a",
     },
@@ -139,10 +139,10 @@ const myQuestions = [
         question: "Assinale a alternativa incorreta.",
         answers: {
             a: "Desde as primeiras chuvas, Dona Inácia iniciou seus preparativos de viagem.",
-            b: "Às onze horas, o alto-falante anuncionou o início das aulas.",
+            b: "Às onze horas, o alto-falante anunciou o início das aulas.",
             c: "Na área econômica, o novo presidente receberá um país ainda envolvido na crise.",
             d: "Todos sabemos que as inovações em qualquer das atividades humanas, especialmente nas artes, área das intimidades profundas e delicadas do sentimento, custam a vencer as resistências oriundas da tradição e da inércia.",
-            e: "Meu antigo patrão, Salustino Padilha que tinha levado uma vida de economias indecentes, para fazer o filho doutor, acabara morrendo do estômago e de fome, sem ver na família o título que ambicionava."
+            e: "Meu antigo patrão, Salustiano Padilha que tinha levado uma vida de economias indecentes, para fazer o filho doutor, acabara morrendo do estômago e de fome, sem ver na família o título que ambicionava."
         },
         correctAnswer: "e",
     },
