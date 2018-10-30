@@ -15,17 +15,6 @@ const myQuestions = [
         correctAnswer: "b",
     },
     {
-        question: "As aspas marcam o uso de uma palavra ou expressão de variedade linguística diversa da que foi usada no restante da frase em:",
-        answers: {
-            a: "Essa visão desemboca na busca ilimitada do lucro, da apologia do empresário privado como o “grande herói” contemporâneo.",
-            b: "Pude ver a obra de Machado de Assis de vários ângulos, sem participar de nenhuma visão “oficialesca”.",
-            c: "Nas recentes discussões sobre os “fundamentos” da economia brasileira, o governo deu ênfase ao equilíbrio fiscal.",
-            d: "O prêmio Darwin, que “homenageia” mortes estúpidas, foi instituído em 1993.",
-            e: "Em fazendas de Minas e Santa Catarina, quem aprecia o campo pode curtir o frio, ouvindo “causos” à beira da fogueira."
-        },
-        correctAnswer: "e",
-    },
-    {
         question: "Considere os períodos I, II e III, pontuados de duas maneiras diferentes. <br><br> I. Pedro, o gerente do banco ligou e deixou um recado. <br> &ensp; Pedro, o gerente do banco, ligou e deixou um recado. <br> II. De repente, perceberam que estavam brigando à toa. <br> &ensp; De repente perceberam que estavam brigando à toa. <br> III. Os doces visivelmente deteriorados foram postos na lixeira. <br> &ensp; Os doces, visivelmente deteriorados, foram postos na lixeira. <br> Com a alteração da pontuação, houve mudança de sentido somente em:",
         answers: {
             a: "I.",
