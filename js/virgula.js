@@ -34,7 +34,7 @@ const myQuestions = [
             d: "I e III.",
             e: "II e III."
         },
-        correctAnswer: "c",
+        correctAnswer: "d",
     },
     {
         question: "Assinale a alternativa correta.",
