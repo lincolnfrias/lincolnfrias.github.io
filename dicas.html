@@ -27,6 +27,7 @@
         <li><a href='https://drive.google.com/drive/folders/1hikE_Tq8QSn5d8VQ00rz1uFzTGgim_3e?usp=sharing' target='_blank'>dotfiles</a></li>
         <li>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</li>
         <li>sudo apt install git autojump tree gnome-tweak-tool libreoffice-calc libreoffice-writer vlc trash-cli</li>        
+        <li>já estavam instalados: sudo apt install xsel libjpeg62 (pd.read_clipboard, rstudio)</li>
         <li>no bashrc (não esqueça do ponto no começo): . /usr/share/autojump/autojump.sh</li>
         <li>conda config --add channels conda-forge</li>
         <li>conda install geopandas altair palettable missingno pandas-datareader twine</li>
@@ -35,16 +36,20 @@
         <li>conda remove fiona geopandas</li>
         <li>pip install fiona geopandas</li>
         <li>R <ul>
-            <li>sudo apt install r-base r-base-dev</li>
+            <li>sudo apt install r-base r-base-dev libcurl4-openssl-dev libssl-dev libxml2-dev</li>
             <li>sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu bionic-cran35/" | sudo tee -a /etc/apt/sources.list</li>
             <li>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9</li>        
             <li>sudo apt update && sudo apt upgrade/li>
+            <li>sudo apt install </li>
+            <li>install.packages(c('tidyverse', 'devtools', 'repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'uuid', 'digest'))</li>
+            <ul>IRKernel jupyter
+                <li>devtools::install_github('IRkernel/IRkernel')</li>
+                <li>IRkernel::installspec()</li>
+            </ul>
             </ul>
         </li>
         <li>pip install pywaffle</li>
         <li>snap install spotify</li>
-        <li>já estavam instalados: sudo apt install xsel libjpeg62 (pd.read_clipboard, rstudio)</li>
-        <li>install.packages('tidyverse')</li>    
         <li>sudo apt install gimp inkscape hunspell-pt-br libreoffice-l10n-pt-br texstudio texlive-latex-extra</li>
     </ul>
 
