@@ -149,7 +149,7 @@ const myQuestions = [
     {
         question: "Assinale a alternativa incorreta.",
         answers: {
-            a: "– D. Sara, a senhora é nossa benfeitora.",
+            a: "Meu amigo, confie em mim.",
             b: "Mulheres pobres, lavando roupa no riacho, representavam o outro lado do mundo.",
             c: "Peixadas, galinha de cabidela, tudo me recordava D. Sara.",
             d: "Adriano, sozinho, enfrentava a orfandade.",
