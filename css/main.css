@@ -2,9 +2,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20% 0% 20%;
+  padding: 0 5% 0% 5%;
   /* background-color: #f8f2e9; */
 }
+
+@media (max-width: 600px) {
+   padding: 0;
+   }
 
 p {
   font-size: 16px;
