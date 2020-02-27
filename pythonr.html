@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109249141-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());        
+          gtag('config', 'UA-109249141-1');
+        </script>
+        
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='estatística em python, incluindo criação de gráficos, aplicativos web e leitura de dados do ibge, datasus, rais-caged, banco mundial etc.'>
+    <title>python e R</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head> 
+<body>   
+
+    <div class="barra">
+        <a  href="index.html">início</a>
+    </div>      
+    
+    <h2>Python e R: semelhanças e diferenças</h2>
+
+    <br>
+
+    <p>Uma boa notícia: python e R são linguagens tão parecidas quanto português e espanhol, veja a comparação na tabela a seguir.</p>
+    <p>Se preferir, esse vídeo mostra as comparações que estão listadas nesta página:</p>
+
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/gl_7kBlK23s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>função</th>
+            <th>python</th>
+            <th>R</th>
+        </tr>
+        <tr>
+            <td>criar variáveis</td>
+            <td><code>a = 23</code></td>
+            <td><code>a = 23     </code> <code><span class='erro'>a <- 23</span></td>
+        </tr>
+        <tr>
+            <td>ler dataframes</td>
+            <td><code>pd.read_csv('restaurante1.csv')</code></td>
+            <td><code>read.csv('restaurante1.csv')</code></td>
+        </tr>
+        <tr>
+            <td>ver tamanho do dataframe</td>
+            <td><code>restaurante1.shape</code></td>
+            <td><code>dim(restaurante1)</code></td>
+        </tr>
+        <tr>
+            <td>criar comentários</td>
+            <td><code># linha comentada</code></td>
+            <td><code># linha comentada</code></td>
+        </tr>
+        <tr>
+            <td>subselecionar dataframe por linhas</td>
+            <td><code>restaurante1.query('receitas < 10000')</code></td>
+            <td><code>restaurante1 %>% filter(receitas < 10000)</code></td>
+        </tr>
+        <tr>
+                <td>subselecionar dataframe por colunas</td>
+                <td><code>restaurante1.receitas</code></td>
+                <td><code>restaurante1$receitas</code></td>
+        </tr>
+        <tr>
+            <td>criar vetor</td>
+            <td><code>a = np.array([3, 4, 5])</code></td>
+            <td><code>a <- c(3, 4, 5)</code></td>
+        </tr>    
+        <tr>
+            <td>subselecionar vetor</td>
+            <td><code>a[1:2]</code></td>
+            <td><code>a[1:2]</code></td>
+        </tr>
+        <tr>
+            <td>regressão</td>
+            <td><code>smf.ols('receita ~ despesas + empresa', data=dois_restaurantes).fit()</code></td>
+            <td><code>lm('receita ~ despesas + empresa', data=dois_restaurantes)</code></td>
+        </tr>
+        <tr>
+            <td>histograma</td>
+            <td><code>restaurante1.receitas.hist()</code></td>
+            <td><code>ggplot(restaurante1, aes(receitas)) + geom_histogram()</code></td>
+        </tr>
+        <tr>
+            <td>valores booleanos</td>
+            <td>True/False</td>
+            <td>T/F, TRUE/FALSE</td>
+        </tr>
+        <tr>
+            <td>primeira posição de um vetor</td>
+            <td><code>minha_lista[0]</code></td>
+            <td><code>minha_lista[1]</code></td>
+        </tr>
+        <tr>
+            <td>não use ponto no nome de objetos </td>
+            <td><code>novo_objeto = 23</code></td>
+            <td><code>novo_objeto = 23    </code> <code><span class='erro'>novo.objeto = 23</span></code>
+            </td>
+        </tr>
+        <tr>
+            <td>potenciação</td>
+            <td><code>2**3</code></td>
+            <td><code>2**3 </code><code><span class='erro'>2^3</span></code></td>
+        <tr>
+            <td>executar comandos</td>
+            <td><code>shift+enter</code></td>
+            <td><code>ctrl+enter</code></td>
+        </tr>
+        <tr>
+            <td>delimitação de funções e estruturas</td>
+            <td>indentação</td>
+            <td>chaves</td>
+        </tr>
+        <tr>
+            <td>interface</td>
+            <td>JupyterLab</td>
+            <td>JupyterLab <span class='erro'>RStudio</span></td>
+        </tr>
+        <tr>
+            <td>carregar pacotes</td>
+            <td><code>import pandas as pd</code></td>
+            <td><code>library(dplyr)</code></td>
+        </tr>
+        <tr>
+            <td>criar funções</td>
+            <td><code>def soma(a, b):<br>
+                &nbsp&nbsp&nbsp&nbspreturn a + b</code></td>
+            <td><code>soma = function(a, b){<br>
+                    return(a + b) <br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>for loop</td>
+            <td><code>for i in range(1, 6): <br> 
+                &nbsp&nbsp&nbsp&nbspprint(i)</code></td>
+            <td><code>for(i in 1:5){ <br>
+                print(i) <br>
+            }</code></td>
+        </tr>
+        <tr>
+            <td>while</td>
+            <td><code>while i < 5: <br>
+                &nbsp&nbsp&nbsp&nbspprint(i) <br>
+                &nbsp&nbsp&nbsp&nbspi += 1</code></td>
+            <td><code>while(i < 5){ <br>
+                print(i) <br>
+                i = i + 1 <br>
+            }</code></td>
+        </tr>
+        <tr>
+            <td>if else</td>
+            <td><code>if x >= 0: <br>
+                &nbsp&nbsp&nbsp&nbspprint('não negativo') <br>
+                else: <br>
+                &nbsp&nbsp&nbsp&nbspprint('negativo') <br>
+            </code></td>
+            <td><code>if (x >= 0){ <br>
+                    print('não negativo') <br>
+                } else { <br>
+                    print('negativo') <br>
+                }</code></td>
+        </tr>
+    </table>
+
+    <br>
+    <p>Portanto, elas são muito semelhantes na criação de objetos, no trabalho com vetores e dataframes, na criação de gráficos e na análise de regressão a partir de fórmulas.</p>
+
+    <p>Uma primeira diferença entre as duas linguagens, já aparente nos exemplos acima, é o fato de que alguns comandos em python começam com siglas ("pd", "np" e "smf"). Elas são abreviaturas do nome dos pacotes onde estão essas funções (respectivamente, pandas, numpy e statsmodels). Essa é uma prática comum nos códigos de python e serve para evitar confusões entre funções de pacotes diferentes, mas com mesmo nome.</p>
+
+    <p>Além disso, essas abreviaturas permitem usar o autocomplete para descobrir comandos. Por exemplo, basta digitar "pd." e depois disso apertar a tecla TAB e você verá todos os comandos disponíveis no pacote pandas.</p>
+
+
+    <br>
+
+    <p>A figura abaixo compara o crescimento das duas linguagens (<a href='https://stackoverflow.blog/2017/09/06/incredible-growth-python/' target='_blank'>fonte</a>):</p>
+
+    <img src='imagens/growth-smaller.png' alt='crescimento das linguagens' height=300>
+
+    <br>
+    <p>Se quiser experimentar o python, <a href='https://colab.research.google.com/drive/1HQmW-DhyagWq2Iot5ydgdLB7850Phgdd#offline=true&sandboxMode=true' target='_blank'>clique aqui para abrir um notebook no Gooogle Colab com uma comparação entre as duas linguagens</a>. Depois de clicar, faça o seguinte:</p> 
+    
+    <ul>
+        <li>faça o login em sua conta do gmail (botão azul no canto superior direito).</li>
+        <li>execute alguma célula (shift-enter).</li>
+        <li>quando aparecer uma pergunta, clique em "Run Anyway".</li>
+        <li>na próxima pergunta, clique em "Yes".</li>
+    </ul>
+
+</body>
+</html>
+
+

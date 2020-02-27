@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='pt'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tabela1').load('outros/pns-nomes.html', function(){ 
+                $('#pns-nomes').DataTable({
+
+                }) });
+
+            $('#tabela2').load('outros/pns-dic.html', function () {
+                $('#pns-dic').DataTable({
+
+                })
+            });
+
+        });
+    </script>
+
+    <title></title>
+</head>
+
+<body>
+    <h2>Pesquisa Nacional de Saúde</h2>
+    <br>
+    <br>
+    <div id="tabela1">load external html file</div>
+    <br>
+    <br>
+    <div id="tabela2">load external html file</div>
+    <br>
+
+</body>
+
+</html>

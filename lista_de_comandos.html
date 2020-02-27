@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109249141-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());        
+          gtag('config', 'UA-109249141-1');
+        </script>
+        
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='estatística em python, incluindo criação de gráficos, aplicativos web e leitura de dados do ibge, datasus, rais-caged, banco mundial etc.'>
+    <title>análise de dados</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head> 
+<body>   
+
+    <div class="barra">
+        <a  href="index.html">início</a>
+    </div>      
+    
+    <h1>Lista de comandos para análise de dados em python</h1>
+    <p><br></p>
+    <h2>Para entender o Jupyter</h2>
+    <p><br></p>
+    <ul>
+    <li>
+    <p>Dois modos</p>
+    <ol>
+    <li>modo edição: escreve em uma célula</li>
+    <li>modo comando: movimenta as células</li>
+    </ol>
+    </li>
+    <li>
+    <p>Dois tipos de células</p>
+    <ol>
+    <li>código (esc, depois y)</li>
+    <li>markdown (esc, depois m)</li>
+    </ol>
+    </li>
+    </ul>
+    <p>esc - entra em modo comando (azul)</p>
+    <p>enter - entra em modo edição (verde)</p>
+    <p><strong>Modo comando (azul)</strong></p>
+    <p>m - muda célula para markdown<br>
+    y - muda célula para python<br>
+    a - cria célula acima (<em>above</em>)<br>
+    b - cria célula abaixo (<em>bellow</em>)<br>
+    v - cola célula<br>
+    c - copia célula<br>
+    x - recorta/apaga célula<br>
+    f - pesquisar e substituir palavras<br>
+    l - mostra números das linhas<br>
+    h - lista de atalhos<br>
+    ii (i duas vezes) - interrompe a execução da célula
+    00 (zero duas vezes) - reinicia o notebook  </p>
+    <p>SHIFT - M: mescla células<br>
+    CTRL + SHIFT + (sinal de menos): divide célula</p>
+    <p><strong>Modo edição (verde)</strong></p>
+    <p>SHIFT-ENTER - executa os comandos que estão dentro da célula  </p>
+    <p>objeto.TAB (clique em depois de um ponto) - sugestões de métodos  </p>
+    <p># - transforma a linha em comentário, isto é, algo que não será executado.  </p>
+    <p>%matplotlib inline - para que os gráficos apareçam no documento (um resquício de versões antigas)    </p>
+    <p>import pandas as pd - carrega algum pacote (p. ex., pandas) como alguma sigla (p. ex., pd)  </p>
+    <p>*Listas *</p>
+    <p>x = [209, 32, 4, 23, 45] - cria um objeto chamado x contendo uma lista
+    com os números 209, 32, 4, 23 e 45.</p>
+    <p><em>Atenção: o python começa a contar em zero.</em></p>
+    <p>x[0] - mostra o primeiro elemento da lista (209), x[1] mostra o
+    segundo elemento (32) etc.</p>
+    <p>x[1:4] - mostra os números nas posições 1, 2, 3 (32, 4 e 23)</p>
+    <p>x[:2] - mostra todos os elementos até o terceiro (209 e 32), <em>não</em>
+    incluindo o terceiro (intervalo aberto).</p>
+    <p>x[3:] - mostra todos os elementos a partir do quarto (23 e 45),
+    incluindo o quarto.</p>
+    <p>x[:] - mostra todos os elementos da lista.</p>
+    <p>len(x) - mostra o tamanho de x. Nesse caso, 3.</p>
+    <p>sum([209, 32, 4, 23 e 45]) ou sum(x) - soma os valores.</p>
+    <p>min(x) e max(x) - mostra os valores mínimos e máximos.</p>
+    <p><em>Operadores</em></p>
+    <p>3 * 2 - multiplicação</p>
+    <p>6 / 3 - divisão</p>
+    <p>2 ** 3 - potenciação (p. ex, dois elevado a três)</p>
+    <p>= - atribuição (p. ex., x recebe 3)</p>
+    <p>== - teste de igualdade (p. ex., ‘município == “Varginha”’ testa se o
+    município é Varginha).</p>
+    <p>!= - teste de desigualdade (p. ex., ‘município != “Varginha”’ testa se o
+    município não é Varginha.</p>
+    <p>&amp; - e</p>
+    <p>| - ou</p>
+    <p>&gt;=, &lt;= - maior ou igual que, menor ou igual que</p>
+    <p><em>Ler dados e mostrar informações básicas</em></p>
+    <p>pnad = pd.read_csv('pnad022017.csv') - lê o arquivo csv e o transforma
+    em um objeto dataframe chamado pnad</p>
+    <p>pnad = pd.read_excel('pnad022017.xls') - lê o arquivo do Excel (xls ou
+    xlsx) e o transforma em um objeto dataframe.</p>
+    <p>pnad.shape - mostra o número de linhas e colunas do dataframe. Obs:
+    nesse caso não é preciso abrir e fechar parêntesis.</p>
+    <p>pnad.columns - mostra o nome das colunas (variáveis). Obs: nesse caso
+    não é preciso abrir e fechar parêntesis.</p>
+    <p>pnad.head(10) - mostra as primeiras dez linhas do dataframe, o padrão é
+    mostrar 5.</p>
+    <p>pnad.tail(10) - mostra as últimas dez linhas do dataframe.</p>
+    <p>pnad.info() - mostra os tipos das variáveis e o tamanho do dataframe na
+    memória.</p>
+    <p>pnad.loc[ :, ['sexo', 'idade', 'renda']] - <em>subseleção</em> por rótulos
+    (<em>labels</em>), mostra todas as linhas, apenas das variáveis indicadas.</p>
+    <p>pnad.iloc[ :10, [3, 4, 5]] - <em>subseleção</em> por posição (i). No
+    exemplo, mostra apenas as primeiras das variáveis nas posições
+    indicadas.</p>
+    <p><em>Atenção: note o uso de dois pares de colchetes em .loc e .iloc. O
+    primeiro deles deriva do fato de que funções usam colchetes ao invés
+    pois são subseleções, como no caso das listas explicado acima. O segundo
+    par de colchete é usado quando queremos indicar mais de um elemento,
+    situação em que é preciso criar uma lista.</em></p>
+    <p><em>Estatísticas básicas</em></p>
+    <p>pnad.describe() - mostra o resumo estatístico (mínimo, máximo, média,
+    mediana e quartis) de todas as variáveis do dataframe.</p>
+    <p>pnad.min() - mostra o valor mínimo de todas as variáveis. O mesmo pode
+    ser feito com todos os comandos abaixo.</p>
+    <p>pnad.renda.describe() - mostra o resumo estatístico da variável
+    selecionada.</p>
+    <p>pnad.renda.min() - mostra a observação com a menor renda.</p>
+    <p>pnad.renda.max() - a maior renda.</p>
+    <p>pnad.renda.mean() - a média da renda.</p>
+    <p>pnad.renda.std() - o desvio padrão da renda.</p>
+    <p>pnad.renda.var() - a variância da renda.</p>
+    <p>pnad.renda.mad() - o desvio absoluto médio da renda.</p>
+    <p>pnad.renda.sum() - o somatório da renda.</p>
+    <p>pnad.renda.cumsum() - a soma acumulada da renda.</p>
+    <p>pnad.cov( ) - a matriz de covariâncias</p>
+    <p>pnad.corr( ) - a matriz de correlações.</p>
+    <p>pnad.loc[ :, [‘renda’, ‘idade’, ‘estudo’]].corr() - a correlação
+    entre a renda, a idade e anos de estudo.</p>
+    <p><em>Operações com dataframes</em></p>
+    <p>pd.ocup_cod.unique() - mostra todos os valores não repetidos da
+    variável ocup_cod (código da ocupação).</p>
+    <p>pd.sexo.value_counts() - mostra quantas observações há em cada um
+    valores da variável sexo.</p>
+    <p>pnad.query(‘renda &gt; 10000’) - seleciona apenas as observações com
+    renda maior do que 10 mil.</p>
+    <p>pnad.query(‘renda &gt; 10000 &amp; idade &lt; 60 &amp; sexo == 2’) - apenas
+    observações com renda maior do que 10 mil, idade menor do que 60 e que
+    sejam mulheres (o sexo feminino foi codificado como 2).</p>
+    <p>pnad.groupby('sexo').idade.mean() - <em>agrupa</em> as observações por sexo e
+    mostra a média de idade de cada um dos sexos.</p>
+    <p>pnad.sort_values(by='renda', ascending=False) - ordena as observações
+    por renda, em ordem decrescente.</p>
+    <p><strong>Ajuda</strong></p>
+    <p>SHIFT-TAB quando o curso estiver em algum comando. Segure o SHIFT e vá
+    apertando o TAB até quatro vezes para ir aumentando o tamanho da ajuda.</p>
+    <p>pnad.head? - o mesmo que apertar SHIFT-TAB quatro vezes, mostra a
+    documentação do comando .head().</p>
+    <p>pnad.head?? - mostra o código usado pela função .head().</p>
+    <!-- # nível 2
+    
+    import os
+    import statsmodels.formula.api as smf
+    from sklearn import
+    
+    list(range(4))
+    
+    for i in
+    def
+    
+    pip install
+    conda install
+    conda install -c conda-forge
+    
+    np.sqrt()
+    
+    pnad['renda']
+    pnad['']
+    pd.read_excel()
+    pd.read_csv(sep=';')
+    pd.merge()
+    pd.melt()
+    
+    controle de fluxo
+    
+    # if/elif/else
+    a, b = 1, 2
+    if a + b == 3:
+    print('True')
+    elif a + b == 1:
+    print('False')
+    else:
+    print('?')
+    
+    # for
+    a = ['red', 'blue', 'green']
+    for color in a:
+    print(color)
+    
+    # while
+    number = 1
+    while number < 10:
+    print(number)
+    number += 1
+    
+    # break
+    number = 1
+    while True:
+    print(number)
+    number += 1
+    if number > 10:
+    break
+    
+    # continue
+    for i in range(20):
+    if i % 2 == 0:
+    continue
+    print(i) -->
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='pt'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='css/main.css'>
+    <title>perfil dos alunos</title>
+    <script src="js/jquery.min.js"></script>
+
+    </head>
+    <body>
+        
+        <h1>Perfil dos alunos do ICSA</h1>
+
+        <p>alguma coisa</p>
+        
+        <img class='gf' src='imagens/alunos-ingresso-bice.png'>
+        
+        <p>alguma coisa</p>
+
+        <br>
+        <br>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>situação</th>      <th>alunos</th>    </tr>  </thead>  <tbody>    <tr>      <td>desistente</td>      <td>1009</td>    </tr>    <tr>      <td>cursando</td>      <td>657</td>    </tr>    <tr>      <td>concluinte</td>      <td>527</td>    </tr>    <tr>      <td>desligado</td>      <td>175</td>    </tr>    <tr>      <td>processo_desligamento</td>      <td>105</td>    </tr>    <tr>      <td>abandono_curso</td>      <td>37</td>    </tr>    <tr>      <td>retorno_trancamento_curso</td>      <td>29</td>    </tr>    <tr>      <td>prazo_integralizacao_dilatado</td>      <td>20</td>    </tr>    <tr>      <td>transferencia_outra_ies</td>      <td>17</td>    </tr>    <tr>      <td>trancamento_curso</td>      <td>16</td>    </tr>    <tr>      <td>mudanca_turno</td>      <td>14</td>    </tr>    <tr>      <td>transferencia_outro_curso</td>      <td>7</td>    </tr>    <tr>      <td>matricula_autorizada_fora_do_prazo</td>      <td>6</td>    </tr>    <tr>      <td>falecimento</td>      <td>3</td>    </tr>    <tr>      <td>vinculo_suspenso</td>      <td>1</td>    </tr>    <tr>      <td>rematricula</td>      <td>1</td>    </tr>    <tr>      <td>total</td>      <td>2624</td>    </tr>  </tbody></table>
+
+        <br>
+
+        
+        <img src='imagens/alunos-area-bice.png'>
+
+        <br>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>ensino_medio</th>      <th>concluinte</th>      <th>cursando</th>      <th>desistente</th>    </tr>  </thead>  <tbody>    <tr>      <td>a maior parte em escola pública estadual</td>      <td>0.04</td>      <td>0.04</td>      <td>0.06</td>    </tr>    <tr>      <td>a maior parte em escola pública federal</td>      <td>0.01</td>      <td>0.00</td>      <td>0.01</td>    </tr>    <tr>      <td>a maior parte em escola pública municipal</td>      <td>0.00</td>      <td>0.00</td>      <td>0.01</td>    </tr>    <tr>      <td>maior parte em escola particular</td>      <td>0.03</td>      <td>0.03</td>      <td>0.06</td>    </tr>    <tr>      <td>não respondeu</td>      <td>0.06</td>      <td>0.02</td>      <td>0.05</td>    </tr>    <tr>      <td>supletivo ou equivalente privado</td>      <td>0.00</td>      <td>0.00</td>      <td>0.00</td>    </tr>    <tr>      <td>supletivo ou equivalente público</td>      <td>0.01</td>      <td>0.01</td>      <td>0.02</td>    </tr>    <tr>      <td>todo em escola particular</td>      <td>0.33</td>      <td>0.24</td>      <td>0.24</td>    </tr>    <tr>      <td>todo em escola pública estadual</td>      <td>0.42</td>      <td>0.56</td>      <td>0.49</td>    </tr>    <tr>      <td>todo em escola pública federal</td>      <td>0.07</td>      <td>0.08</td>      <td>0.05</td>    </tr>    <tr>      <td>todo em escola pública municipal</td>      <td>0.03</td>      <td>0.01</td>      <td>0.01</td>    </tr>  </tbody></table>
+
+        <br>
+
+        <img src='imagens/alunos-barras-ensino-medio-bice.png'  alt='ensino_medio-bice'>
+
+        <br>
+
+        <p>Os alunos que ainda estão cursando são mais jovens porque a pergunta é feito no início do curso. Há grande sobreposição entre desistentes e concluintes, embora as idades dos desistentes sejam mais dispersas.</p>
+        <img src='imagens/alunos-boxplot-idade-bice.png' alt='idade'>
+
+
+        <br>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>municipio</th>      <th>concluinte</th>      <th>% concl.</th>      <th>cursando</th>      <th>% curs.</th>      <th>desistente</th>      <th>% desist.</th>      <th>total</th>    </tr>  </thead>  <tbody>    <tr>      <td>Varginha</td>      <td>201</td>      <td>19</td>      <td>258</td>      <td>25</td>      <td>581</td>      <td>55</td>      <td>1040</td>    </tr>    <tr>      <td>Três Pontas</td>      <td>17</td>      <td>14</td>      <td>32</td>      <td>27</td>      <td>70</td>      <td>58</td>      <td>119</td>    </tr>    <tr>      <td>Três Corações</td>      <td>12</td>      <td>10</td>      <td>34</td>      <td>30</td>      <td>66</td>      <td>58</td>      <td>112</td>    </tr>    <tr>      <td>Alfenas</td>      <td>17</td>      <td>18</td>      <td>15</td>      <td>16</td>      <td>60</td>      <td>65</td>      <td>92</td>    </tr>    <tr>      <td>Elói Mendes</td>      <td>8</td>      <td>13</td>      <td>13</td>      <td>21</td>      <td>40</td>      <td>65</td>      <td>61</td>    </tr>    <tr>      <td>Paraguaçu</td>      <td>5</td>      <td>10</td>      <td>14</td>      <td>30</td>      <td>28</td>      <td>59</td>      <td>47</td>    </tr>    <tr>      <td>Boa Esperança</td>      <td>7</td>      <td>15</td>      <td>13</td>      <td>28</td>      <td>26</td>      <td>56</td>      <td>46</td>    </tr>    <tr>      <td>Nepomuceno</td>      <td>10</td>      <td>17</td>      <td>26</td>      <td>46</td>      <td>21</td>      <td>36</td>      <td>57</td>    </tr>    <tr>      <td>São Gonçalo do Sapucaí</td>      <td>6</td>      <td>15</td>      <td>12</td>      <td>31</td>      <td>21</td>      <td>53</td>      <td>39</td>    </tr>    <tr>      <td>São Paulo</td>      <td>7</td>      <td>18</td>      <td>13</td>      <td>35</td>      <td>17</td>      <td>45</td>      <td>37</td>    </tr>  </tbody></table>
+
+        <br>
+
+        <img src='imagens/alunos-boxplot-enem-cda-bice.png'>
+ 
+        <br>
+
+        <img src='imagens/alunos-dispersao-enem-cda-bice.png'>
+
+        <br>
+        <p>Analisando apenas os concluintes, a correlação sobe apenas para 0,3.</p>
+
+        <p>Adicionando os semestres como controles em uma regressão (não mostrada aqui) incluindo dados de todos os alunos, o R<sup>2</sup> passa apenas de 0,06 para 0,1.</p>
+
+        <br>
+
+        <h5>A relação entre a nota do Enem e o coeficiente acadêmico, por semestre de ingresso.</h5>
+        <img src='imagens/alunos-matriz-enem-cda-bice.png'> 
+
+        <br>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>semestres</th>      <th>correlações</th>    </tr>  </thead>  <tbody>    <tr>      <td>2010-01</td>      <td>0.26</td>    </tr>    <tr>      <td>2010-06</td>      <td>0.18</td>    </tr>    <tr>      <td>2011-01</td>      <td>0.36</td>    </tr>    <tr>      <td>2011-06</td>      <td>0.28</td>    </tr>    <tr>      <td>2012-01</td>      <td>0.19</td>    </tr>    <tr>      <td>2012-06</td>      <td>0.09</td>    </tr>    <tr>      <td>2013-01</td>      <td>0.33</td>    </tr>    <tr>      <td>2013-06</td>      <td>0.17</td>    </tr>    <tr>      <td>2014-01</td>      <td>0.22</td>    </tr>    <tr>      <td>2014-06</td>      <td>0.23</td>    </tr>    <tr>      <td>2015-01</td>      <td>0.25</td>    </tr>    <tr>      <td>2015-06</td>      <td>-0.11</td>    </tr>    <tr>      <td>2016-01</td>      <td>0.24</td>    </tr>    <tr>      <td>2016-06</td>      <td>0.43</td>    </tr>    <tr>      <td>2017-01</td>      <td>0.47</td>    </tr>    <tr>      <td>2017-06</td>      <td>0.23</td>    </tr>  </tbody></table>
+
+
+        <h2>Cursos específicos</h2>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>curso</th>      <th>alunos</th>    </tr>  </thead>  <tbody>    <tr>      <td>economia</td>      <td>274</td>    </tr>    <tr>      <td>atuária</td>      <td>112</td>    </tr>    <tr>      <td>adm</td>      <td>112</td>    </tr>    <tr>      <td>total</td>      <td>498</td>    </tr>  </tbody></table>
+
+        <br>
+
+        <img src='imagens/alunos-linha-ingresso-espec.png'> 
+
+        <br>
+
+        <img class='gf' src='imagens/alunos-boxplot-enem-cda-espec.png'> 
+
+        <br>
+
+        <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>curso</th>      <th>situacao</th>      <th>alunos</th>    </tr>  </thead>  <tbody>    <tr>      <td>adm</td>      <td>concluinte</td>      <td>44</td>    </tr>    <tr>      <td></td>      <td>cursando</td>      <td>40</td>    </tr>    <tr>      <td></td>      <td>desistente</td>      <td>28</td>    </tr>    <tr>      <td>atuária</td>      <td>concluinte</td>      <td>66</td>    </tr>    <tr>      <td></td>      <td>cursando</td>      <td>34</td>    </tr>    <tr>      <td></td>      <td>desistente</td>      <td>12</td>    </tr>    <tr>      <td>economia</td>      <td>concluinte</td>      <td>128</td>    </tr>    <tr>      <td></td>      <td>cursando</td>      <td>84</td>    </tr>    <tr>      <td></td>      <td>desistente</td>      <td>61</td>    </tr>    <tr>      <td></td>      <td>falecimento</td>      <td>1</td>    </tr>  </tbody></table>
+
+        <h1>Testes</h1>
+        <br>
+        <div id="tabela1">load external html file</div> 
+        <br>
+        <p>coisa</p>
+        <div id="tabela2"></div>
+
+
+
+        <script>
+
+            $('p').css('color', 'red');
+
+            $(document).ready(function(){
+                $('#tabela1').load('apagar2.html');     
+                $('#tabela2').load('tabelas/alunos-tabela1.html');     
+            }); 
+
+        </script>
+
+
+    </body>
+</html>

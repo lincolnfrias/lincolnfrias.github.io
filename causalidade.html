@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109249141-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());        
+          gtag('config', 'UA-109249141-1');
+        </script>
+        
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>causalidade</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head> 
+<body>   
+
+    <div class="barra">
+        <a  href="index.html">início</a>
+    </div>      
+    
+    <h2>Não leia isso, está muito bagunçado.</h2>
+
+    <p>Empresas x tendem a ter característica y. Quais são as explicações possíveis?</p>   
+
+    <p>Há três tipos baśicos de pesquisa científica: descritivas, explicativas e preditivas. As primeiras descrevem a realidade, as segundas tentam identificar porque as coisas são assim e as úlimas tentam prever o que vai acontecer.</p>
+     
+    <p>As pesquisas explicativas consistem na tentativa de identificar e mensurar relações causais, isto é, quando e quanto determinado acontecimento provoca outro acontecimento. Por exemplo:</p>
+
+    <p>felicidade e casamento. Tabela. c -> f, f -> c,  f <- dinheiro -> c </p>
+    <p>1. Suponha que domicílios sem televisão tenham mais filhos, seguindo a tabela abaixo. Como explicar essas relação? </p>
+    <p>2. Suponha que entre os alunos com melhor desempenho acadêmico haja mais usuários de maconha, seguindo a tabela abaixo. A causalidade pode ir nas duas direções? Uma terceira variável pode ser responsável pela associação?</p>
+    <p>3. Um estudo indicou que a proporção de doenças graves entre os que se exercitam é metade daquela observada entre os que não se exercitam. Talvez a idade seja uma variável confundidora.</p>
+
+    <ul>
+        <li>fumar causa câncer?</li>
+        <li>a pobreza leva à criminalidade?</li>
+    </ul>
+
+    
+    <p>Para que haja relação causal entre duas variáveis é preciso que três condições (necessárias, mas não suficientes; Agresti e Finlay, 2008) sejam satisfeitas:</p>
+    
+    <ul>
+        <li>deve haver associação entre elas</li>
+        <li>uma deve acontecer antes da outra</li>
+        <li>as explicações alternativas para o relacionamento entre as variáveis devem ser eliminadas</li>
+    </ul>
+
+    <p>Para avaliar a associação entre variáveis numéricas é preciso utilizar diagramas de dispersão. No caso da relação entre uma variável categórica e uma numérica uma tabela cruzada comparando as médias é utilizada (ou boxplots). Quando são duas variáveis categóricas utiliza-se uma tabela cruzada indicando as contagens de observações.</p>
+
+    <img src="imagens/correlacoes.svg" height=600>  
+
+    <table class="dataframe"> <thead> <tr > <th></th> <th>salário</th> </tr></thead> <tbody> <tr> <th>homens</th> <td>100</td></tr><tr> <th>mulheres</th> <td>80</td></tr></tbody> </table> <br><table class="dataframe"> <thead> <tr > <th></th> <th>inexperientes</th> <th>experientes</th> </tr></thead> <tbody> <tr> <th>homens</th> <td>75</td><td>110</td></tr><tr> <th>mulheres</th> <td>75</td><td>110</td></tr></tbody> </table>
+    
+
+    <p>Há diferentes estruturas de associação. A primeira delas é a ausência de estrutura, quando a associação acontece por acaso. Por isso, um único estudo é sempre insuficiente para comprovar associação entre variáveis. É preciso replicar o resultado.</p> 
+    
+    <p>Outras: </p>
+    <ul>
+        <li>associação espúria</li>
+        <li>associação indireta</li>
+        <li>múltiplas causas associadas</li>
+        <li>associação com interação</li>
+    </ul>
+
+    <p>Seja x a causa e y o efeito. Quando há relação causal, a cada variação em x corresponde uma variação em y. Se as variáveis forem positivamente associadas, cada aumento em x corresponderá a um aumento em y. Porém, se elas estiverem negativamente associadas, o aumento em x estará associado a uma diminuição em y. Nos dois casos, é possível que x seja causa de y. Contudo, se o valor de y se mantiver constante quando o valor de x mudar, então não há relação causal entre eles. Se pobreza causa criminalidade, deve haver mais criminosos entre os pobres.</p>
+    
+    <img src="imagens/causalidade.png" width=100 >
+
+    <p>Em diversos estudos, variações transversais (diferentes observações no mesmo ponto do tempo) são tratadas como aproximações de manipulações da variável na mesma observação. Isto está relacionado à distinção entre estudos observacionais e experimentais.</p>
+    
+    <p>Na realidade, as associações não são perfeitas, mas sim probabilísticas (o tio fumante e velhinho não é uma prova de o cigarro causa câncer). Uma associação não precisa ser perfeita para  ser causal, pois pode sofrer interferência de outras variáveis. Nem todos os muito fumantes terão câncer, mas a proporção entre eles é mais alta. </p>
+        
+    <p>A causa deve preceder o efeito. Em algumas situações essa distinção é óbvia. Em outras não, embora haja associação, é difícil identificar quem vem primeiro (a associação é compatível com a causalidade nas duas direções):</p>
+
+    <ul>
+        <li>felicidade e casamento;</li>
+        <li>alcoolismo, doença mental e situação de rua;</li>
+        <li>violência doméstica e drogas;</li>
+        <li>escolaridade e desenvolvimento econômico</li>
+    </ul>
+
+    <p>A associação é insuficiente para identificar a direção causal (incluindo a bidirecionalidade). Em estudos experimentais, a ordem no tempo pode ser ajustada. Em estudos observacionais, elas são medidas ao mesmo tempo (não é possível, partindo de pessoas emocionalmente neutras e solteiras, atribuir felicidade e ver casamentos acontecem nem atribuir casamentos e ver se felicidade acontece).</p>
+    
+    <p>A associação é também insuficiente para identificar relações espúrias (desemprego e estupro, envelhecimento e uso da internet etc.). Duas variáveis podem ter a mesma tendência no tempo (no espaço, entre categorias) mesmo que não tenham relações causais entre si: o número de divórcios e o pib per capita e o número usuários da internet etc. Portanto, mesmo com associação e ordem adequada, pode haver relação espúria (z causa x e y - uma explicação alternativa para o relacionamento entre as variáveis).</p>
+    
+    <img src="imagens/causalidade5.png" height=40 >
+
+    <p>Para evitar esse tipo de confusão, é preciso controlar z. Porém, sempre é possível que haja um z desconhecido, que não foi controlado. Por isso, nunca se <em>prova</em> causalidade. Ela pode ser refutada (mostrando falta de associação, ordem inadequada ou explicação alternativa), mas pode ser comprovada. O melhor cenário: forte associação, ordem adequada, ausência de explicações alternativas e descrições plausíveis do mecanismo de causação.</p>    
+
+    <p>Controlar uma variável significa remover seu efeito. Isso é feito mantendo seu valor fixo (selecionando observações com valores iguais). Controlar a variabilidade significa manter o valor constante (ou semelhante), removendo a influência.</p>
+
+    <p>O laboratório serve para controlar variáveis, manter tudo o mais constante (controle experimental). Estudos observacionais não podem fixar valores, mas podem separar observações com valores iguais ( controle estatístico).</p>
+
+    <p>Associação espúria entre x1 e y: são dependentes de uma terceira variável. A associação entre elas desaparece quando x2 é controlada.</p>
+
+    <img src="imagens/altura-mat.svg"> 
+
+    <p>Este é um caso em que x2 é categórica. Nos casos em que ela for numérica, é preciso discretizá-la. No caso em que x1 é categórica e p é numérica, o diagrama de dispersão deve ser substituído por boxplots ou uma tabela cruzada comparando as médias de p em cada categoria de x1. No caso de três variáveis categóricas, a tabela cruzada exibe contagem de observações, não média.</p>
+        
+    <p>Suponha que em uma empresa o salário (p) dos diretores é maior do que o das diretoras (o sexo é x1). Porém, suponha também que a média de idade (x2) dos homens seja maior e que diretores mais velhos tenham mais experiência. Se incluirmos a idade (mais e menos de dez anos após a graduação) como variável controle, isto é, como uma terceira variável na tabela cruzada, é possível que a diferença entre os sexos diminua ou suma pois apenas recentemente as mulheres começaram a ocupar cargos de direção. Isso indicaria que o efeito causal é da experiência, não do sexo. Para um nível fixo de experiência, o sexo não tem influência, não tem associação com o salário. E se associação some, não há relação causal, pois há variação do salário sem variação do sexo. Cada uma das subtabelas é uma tabela parcial.</p> 
+
+    <p>Muitas vezes, não se conhece a variação a ser controlada. É a variável oculta ou não observada, não medida. Por exemplo, pode ser que notas na universidade e salário estejam associados não por causalidade, mas sim por causa do esforço.</p>
+    
+    <p>É difícil saber quais variáveis controlar. A aleatorização do tratamento garante que a distribuição de variáveis ocultas (não mensuradas no estudo mas influentes sobre a associação de interesse) será semelhante entre os grupos.</p>
+
+    <p>Efeitos indiretos: x1 causa y indiretamente. x1 -> x2 -> y. Se x2 for controlada, a associação desaparece. Se x1 for controlada, também não há mudança em y. É preciso que as duas estejam presentes. x2 é causa intermediadora, interveniente. A escolaridade é causa direta ou indireta (renda como intermediadora) da longevidade? O teste é controlar a renda: indivíduos escolarizados mas pobres vivem mais?</p>
+
+    <img src="imagens/causalidade2.png" width=100 >
+
+    <p>Tanto na relação espúria quanto na relação encadeada, a matriz de dispersão mostraria associações entre as três variáveis. Em ambas, o controle de x2 pode fazer desaparecer a associação. A diferença entre elas é a ordem de causalidade (a ordenação no tempo). Há espuriedade quando x2 causa x1 e y, há encadeamento quando x1 causa x2 que causa y.</p>
+    
+    <p>Múltiplas causas. Controlar uma delas não altera o efeito da outra. Mas eles podem se confundir se forem simultâneos?</p>
+    
+    <p>Quando y é causado tanto por x1 quanto por x2, é um caso de múltiplas causas. Elas podem ser independentes (gênero e raça) ou associadas (pobreza e raça). No caso de causas associadas, controlar x2 diminui a associação entre x1 e y, mas não a elimina, pois além do efeito encadeado de x1 em y passando por y, há o efeito direto de x1 em y. </p>
+    
+    <img src="imagens/causalidade3.png" height=40 >
+    
+    <p>Efeitos diretos e indiretos. Associação entre x1 e y muda após controlar x2, mas não desaparece (a escolaridade aumenta a longevidade tanto diretamente quanto através da renda).</p>
+
+    <p>Interação. x2 age sobre a relação entre x1 e y. Ela potencializa, reduz ou suprime (até inverte o sinal). A associação entre x1 e y varia de acordo com o nível de x2. Então, x2 afeta a relação entre x1 e y, e x1 afeta a relação entre x2 e y. A escolaridade pode ter efeitos diferentes de acordo com a região (o coeficiente é diferente). Se não mudar, não há interação. Quando há interação, a força (ou direção) pode mudar em diferentes níveis de x2. Associação não implica interação (a associação é semelhante em diferentes níveis da variável controle). </p>
+
+    <img src="imagens/causalidade4.png" height=40>
+    
+    <p>Efeito de confusão. Quando duas variáveis explicativas estão associadas com y e também entre si, não é possível separar o efeito das duas, é preciso controlar uma delas. Em estudos observacionais, isto significa encontrar observações em que os valores delas sejam diferentes. Quando as variáveis têm efeito sobre y e estão associadas entre si, há confusão dos efeitos. Não é possível saber quanto do efeito é direto.</p>
+
+    <p>Não é possível provar causalidade, pois é possível que seja mera associação provocada por uma causa comum ainda desconhecida, mas podemos provar que não há causalidade (ordem inadequada, explicação alternativa, ausência de associação).</p>
+    
+    
+    <p>Na equação de regressão βx2 é uma variável de controle. O coeficiente é o efeito.</p>
+    <p>Há diferentes estruturas de associação: relações espúrias, relações encadeadas, múltiplas causas, supressão. </p>
+    <p>Controlar x2 faz relações espúrias (x2 afeta x1 e y) e encadeadas (x2 é mediadora) desaparecerem.</p>
+    <p>Controlar x2 pode mudar a associação no caso de múltiplas causas, mas não eliminá-la.</p>
+    <p>No caso de variáveis supressoras, a associação aparece apenas com o controle. Ausência de associação não significa ausência de causalidade. Pode haver variáveis supressoras.</p>
+    <p>Tamanhos menores da amostra em determinados valores da variável de controle podem afetar a avaliação da associação por causa de grandes erros padrão. Por isso, é melhor evitar um número grande de categorias.</p>
+
+    <h3>Exercícios</h3>
+    
+    
+    <p>5. Um estudo identificou que quem tinha 8 horas em média de sono tinham uma probabilidade 12% maior de morrer nos próximos seis anos do que aqueles que dormiam em media 6,5 h. Idade está associada positivamente com os dois. Se a associação desaparece quando controlamos a idade, isso indica que a idade é causa comum ou variável mediadora? </p>
+    <p>2. A incidência de câncer de mama aumentou desde o começo do século. Idade.</p>
+    <p>6. Estudantes mais altos tem mais habilidade matemática? "À medida que a idade aumenta, tanto a altura quando o desempenho em matemática tendem a aumentar".</p>
+    <p>7. Mães frias estão associados a filhos depressivos, mas pode haver backdoor effect da genética da mãe que ao mesmo tempo a torna depressiva e fria e torna o filho depressivo. Soluções: controlar depressão da mae, ou melhor, estudar apenas filhos adotivos, ou gêmeos monozigóticos (já vêm com a genética e o contexto familiar controlados, o gêmeo mais religioso não era menos delinquente).</p>
+
+    <h3>Referências</h3>
+    <p>Agresti e Finlay. Métodos estatísticos para as ciências sociais, 2008.</p>    
+
+
+</body>
+</html>
+
+
